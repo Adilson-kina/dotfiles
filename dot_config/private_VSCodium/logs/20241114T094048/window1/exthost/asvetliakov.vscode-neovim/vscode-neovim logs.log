@@ -1,0 +1,185 @@
+2024-11-14 09:41:19.383 [info] MessagesManager: ':!git switch experimental\r\n'
+2024-11-14 09:41:19.384 [info] MessagesManager: ':!git switch experimental\r\n' +
+  '\n' +
+  '                  -`\n' +
+  '                 .o+`\n' +
+  '                `ooo/\n' +
+  '               `+oooo:\n' +
+  '              `+oooooo:\n' +
+  '              -+oooooo+:\n' +
+  '            `/:-:++oooo+:\n' +
+  '           `/++++/+++++++:\n' +
+  '          `/++++++++++++++:\n' +
+  '         `/+++ooooooooooooo/`\n' +
+  '        ./ooosssso++osssssso+`\n' +
+  '       .oossssso-````/ossssss+`\n' +
+  '      -osssssso.      :ssssssso.\n' +
+  '     :osssssss/        osssso+++.\n' +
+  '    /ossssssss/        +ssssooo/-\n' +
+  '  `/ossssso+/:-        -:/+osssso+-\n' +
+  ' `+sso+:-`                 `.-/+oso:\n' +
+  '`++:.                           `-/+/\n' +
+  '.`                                 `/^[[1G^[[18A\n'
+2024-11-14 09:41:19.386 [info] MessagesManager: ':!git switch experimental\r\n' +
+  '\n' +
+  '                  -`\n' +
+  '                 .o+`\n' +
+  '                `ooo/\n' +
+  '               `+oooo:\n' +
+  '              `+oooooo:\n' +
+  '              -+oooooo+:\n' +
+  '            `/:-:++oooo+:\n' +
+  '           `/++++/+++++++:\n' +
+  '          `/++++++++++++++:\n' +
+  '         `/+++ooooooooooooo/`\n' +
+  '        ./ooosssso++osssssso+`\n' +
+  '       .oossssso-````/ossssss+`\n' +
+  '      -osssssso.      :ssssssso.\n' +
+  '     :osssssss/        osssso+++.\n' +
+  '    /ossssssss/        +ssssooo/-\n' +
+  '  `/ossssso+/:-        -:/+osssso+-\n' +
+  ' `+sso+:-`                 `.-/+oso:\n' +
+  '`++:.                           `-/+/\n' +
+  '.`                                 `/^[[1G^[[18A\n' +
+  '^[[41Cadilson@archlinux\n' +
+  '^[[41C-----------------\n' +
+  '^[[41COS: Arch Linux x86_64\n' +
+  '^[[41CHost: APM-A520G\n' +
+  '^[[41CKernel: Linux 6.11.5-arch1-1\n' +
+  '^[[41CUptime: 59 mins\n' +
+  '^[[41CPackages: 1025 (pacman)\n' +
+  '^[[41CShell: fish 3.7.1\n' +
+  '^[[41CDisplay (HORIZON Z21): 1920x1080 @ 60 Hz in 22" [External]\n' +
+  '^[[41CWM: Hyprland (Wayland)\n' +
+  '^[[41CCursor: Adwaita\n' +
+  '^[[41CTerminal: nvim\n' +
+  '^[[41CCPU: AMD Ryzen 5 5600G (12) @ 4.46 GHz\n' +
+  '^[[41CGPU: AMD Radeon Vega Series / Radeon Vega Mobile Series [Integrated]\n' +
+  '^[[41CMemory: 4.84 GiB / 7.19 GiB (67%)\n' +
+  '^[[41CSwap: 256.00 KiB / 4.00 GiB (0%)\n' +
+  '^[[41CDisk (/): 24.30 GiB / 33.75 GiB (72%) - ext4\n' +
+  '^[[41CDisk (/mnt/windows): 171.24 GiB / 187.84 GiB (91%) - fuseblk\n' +
+  '^[[41CLocal IP (enp6s0): 192.168.0.253/24\n' +
+  '^[[41CLocale: pt_BR.UTF-8\n' +
+  '^[[41C\n' +
+  '^[[41C^[[40m   ^[[41m   ^[[42m   ^[[43m   ^[[44m   ^[[45m   ^[[46m   ^[[47m   ^[[m\n' +
+  '^[[41C^[[100m   ^[[101m   ^[[102m   ^[[103m   ^[[104m   ^[[105m   ^[[106m   ^[[107m   ^[[m\n'
+2024-11-14 09:41:19.386 [info] MessagesManager: ':!git switch experimental\r\n' +
+  '\n' +
+  '                  -`\n' +
+  '                 .o+`\n' +
+  '                `ooo/\n' +
+  '               `+oooo:\n' +
+  '              `+oooooo:\n' +
+  '              -+oooooo+:\n' +
+  '            `/:-:++oooo+:\n' +
+  '           `/++++/+++++++:\n' +
+  '          `/++++++++++++++:\n' +
+  '         `/+++ooooooooooooo/`\n' +
+  '        ./ooosssso++osssssso+`\n' +
+  '       .oossssso-````/ossssss+`\n' +
+  '      -osssssso.      :ssssssso.\n' +
+  '     :osssssss/        osssso+++.\n' +
+  '    /ossssssss/        +ssssooo/-\n' +
+  '  `/ossssso+/:-        -:/+osssso+-\n' +
+  ' `+sso+:-`                 `.-/+oso:\n' +
+  '`++:.                           `-/+/\n' +
+  '.`                                 `/^[[1G^[[18A\n' +
+  '^[[41Cadilson@archlinux\n' +
+  '^[[41C-----------------\n' +
+  '^[[41COS: Arch Linux x86_64\n' +
+  '^[[41CHost: APM-A520G\n' +
+  '^[[41CKernel: Linux 6.11.5-arch1-1\n' +
+  '^[[41CUptime: 59 mins\n' +
+  '^[[41CPackages: 1025 (pacman)\n' +
+  '^[[41CShell: fish 3.7.1\n' +
+  '^[[41CDisplay (HORIZON Z21): 1920x1080 @ 60 Hz in 22" [External]\n' +
+  '^[[41CWM: Hyprland (Wayland)\n' +
+  '^[[41CCursor: Adwaita\n' +
+  '^[[41CTerminal: nvim\n' +
+  '^[[41CCPU: AMD Ryzen 5 5600G (12) @ 4.46 GHz\n' +
+  '^[[41CGPU: AMD Radeon Vega Series / Radeon Vega Mobile Series [Integrated]\n' +
+  '^[[41CMemory: 4.84 GiB / 7.19 GiB (67%)\n' +
+  '^[[41CSwap: 256.00 KiB / 4.00 GiB (0%)\n' +
+  '^[[41CDisk (/): 24.30 GiB / 33.75 GiB (72%) - ext4\n' +
+  '^[[41CDisk (/mnt/windows): 171.24 GiB / 187.84 GiB (91%) - fuseblk\n' +
+  '^[[41CLocal IP (enp6s0): 192.168.0.253/24\n' +
+  '^[[41CLocale: pt_BR.UTF-8\n' +
+  '^[[41C\n' +
+  '^[[41C^[[40m   ^[[41m   ^[[42m   ^[[43m   ^[[44m   ^[[45m   ^[[46m   ^[[47m   ^[[m\n' +
+  '^[[41C^[[100m   ^[[101m   ^[[102m   ^[[103m   ^[[104m   ^[[105m   ^[[106m   ^[[107m   ^[[m\n' +
+  '\n' +
+  'fatal: cannot switch branch while merging\n' +
+  'Consider "git merge --quit" or "git worktree add".\n'
+2024-11-14 09:41:19.387 [info] MessagesManager: ':!git switch experimental\r\n' +
+  '\n' +
+  '                  -`\n' +
+  '                 .o+`\n' +
+  '                `ooo/\n' +
+  '               `+oooo:\n' +
+  '              `+oooooo:\n' +
+  '              -+oooooo+:\n' +
+  '            `/:-:++oooo+:\n' +
+  '           `/++++/+++++++:\n' +
+  '          `/++++++++++++++:\n' +
+  '         `/+++ooooooooooooo/`\n' +
+  '        ./ooosssso++osssssso+`\n' +
+  '       .oossssso-````/ossssss+`\n' +
+  '      -osssssso.      :ssssssso.\n' +
+  '     :osssssss/        osssso+++.\n' +
+  '    /ossssssss/        +ssssooo/-\n' +
+  '  `/ossssso+/:-        -:/+osssso+-\n' +
+  ' `+sso+:-`                 `.-/+oso:\n' +
+  '`++:.                           `-/+/\n' +
+  '.`                                 `/^[[1G^[[18A\n' +
+  '^[[41Cadilson@archlinux\n' +
+  '^[[41C-----------------\n' +
+  '^[[41COS: Arch Linux x86_64\n' +
+  '^[[41CHost: APM-A520G\n' +
+  '^[[41CKernel: Linux 6.11.5-arch1-1\n' +
+  '^[[41CUptime: 59 mins\n' +
+  '^[[41CPackages: 1025 (pacman)\n' +
+  '^[[41CShell: fish 3.7.1\n' +
+  '^[[41CDisplay (HORIZON Z21): 1920x1080 @ 60 Hz in 22" [External]\n' +
+  '^[[41CWM: Hyprland (Wayland)\n' +
+  '^[[41CCursor: Adwaita\n' +
+  '^[[41CTerminal: nvim\n' +
+  '^[[41CCPU: AMD Ryzen 5 5600G (12) @ 4.46 GHz\n' +
+  '^[[41CGPU: AMD Radeon Vega Series / Radeon Vega Mobile Series [Integrated]\n' +
+  '^[[41CMemory: 4.84 GiB / 7.19 GiB (67%)\n' +
+  '^[[41CSwap: 256.00 KiB / 4.00 GiB (0%)\n' +
+  '^[[41CDisk (/): 24.30 GiB / 33.75 GiB (72%) - ext4\n' +
+  '^[[41CDisk (/mnt/windows): 171.24 GiB / 187.84 GiB (91%) - fuseblk\n' +
+  '^[[41CLocal IP (enp6s0): 192.168.0.253/24\n' +
+  '^[[41CLocale: pt_BR.UTF-8\n' +
+  '^[[41C\n' +
+  '^[[41C^[[40m   ^[[41m   ^[[42m   ^[[43m   ^[[44m   ^[[45m   ^[[46m   ^[[47m   ^[[m\n' +
+  '^[[41C^[[100m   ^[[101m   ^[[102m   ^[[103m   ^[[104m   ^[[105m   ^[[106m   ^[[107m   ^[[m\n' +
+  '\n' +
+  'fatal: cannot switch branch while merging\n' +
+  'Consider "git merge --quit" or "git worktree add".\n' +
+  '\n' +
+  '\n' +
+  'o shell devolveu 128\n' +
+  '\n'
+2024-11-14 09:42:06.261 [info] MessagesManager: '4 fewer lines\n'
+2024-11-14 09:43:54.599 [info] MessagesManager: '2 alterações; antes de #13  5 seconds ago\n'
+2024-11-14 09:43:54.806 [info] MessagesManager: '1 linha a mais; antes de #12  5 seconds ago\n'
+2024-11-14 09:43:54.965 [info] MessagesManager: '1 linha a menos; antes de #11  16 seconds ago\n'
+2024-11-14 09:43:55.127 [info] MessagesManager: '1 linha a mais; antes de #10  31 seconds ago\n'
+2024-11-14 09:43:55.286 [info] MessagesManager: '1 linha a mais; antes de #9  63 seconds ago\n'
+2024-11-14 09:43:55.461 [info] MessagesManager: '1 linha a mais; antes de #8  64 seconds ago\n'
+2024-11-14 09:43:55.645 [info] MessagesManager: '1 linha a mais; antes de #7  65 seconds ago\n'
+2024-11-14 09:43:55.830 [info] MessagesManager: '4 linhas a menos; antes de #6  69 seconds ago\n'
+2024-11-14 09:43:55.981 [info] MessagesManager: '1 linha a mais; antes de #5  09:42:08\n'
+2024-11-14 09:43:56.125 [info] MessagesManager: '1 alteração; antes de #4  09:42:07\n'
+2024-11-14 09:43:56.286 [info] MessagesManager: '4 linhas a mais; antes de #3  09:42:06\n'
+2024-11-14 09:43:56.445 [info] MessagesManager: '5 linhas a menos; antes de #2  09:42:00\n'
+2024-11-14 09:43:56.605 [info] MessagesManager: 'Já está na alteração mais antiga\n'
+2024-11-14 09:43:56.765 [info] MessagesManager: 'Já está na alteração mais antiga\n'
+2024-11-14 09:43:56.925 [info] MessagesManager: 'Já está na alteração mais antiga\n'
+2024-11-14 09:43:57.084 [info] MessagesManager: 'Já está na alteração mais antiga\n'
+2024-11-14 09:43:57.252 [info] MessagesManager: 'Já está na alteração mais antiga\n'
+2024-11-14 09:43:57.413 [info] MessagesManager: 'Já está na alteração mais antiga\n'
+2024-11-14 09:44:02.806 [info] MessagesManager: '1 linha a menos; antes de #14  3 seconds ago\n'
+2024-11-14 09:46:55.491 [info] MessagesManager: 'E20: Marca não definida\n'

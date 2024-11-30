@@ -1,0 +1,32 @@
+[Default Applications]
+application/x-compressed-tar=userapp-tar -xf-EZ36U2.desktop
+application/x-bzip2-compressed-tar=userapp-tar -xf-EZ36U2.desktop
+x-scheme-handler/http=userapp-Firefox-08B9U2.desktop
+x-scheme-handler/https=userapp-Firefox-08B9U2.desktop
+x-scheme-handler/chrome=userapp-Firefox-08B9U2.desktop
+text/html=userapp-Firefox-08B9U2.desktop
+application/x-extension-htm=userapp-Firefox-08B9U2.desktop
+application/x-extension-html=userapp-Firefox-08B9U2.desktop
+application/x-extension-shtml=userapp-Firefox-08B9U2.desktop
+application/xhtml+xml=userapp-Firefox-08B9U2.desktop
+application/x-extension-xhtml=userapp-Firefox-08B9U2.desktop
+application/x-extension-xht=userapp-Firefox-08B9U2.desktop
+application/x-raw-disk-image-xz-compressed=userapp-tar -xf-EZ36U2.desktop
+application/zip=userapp-mkdir unziped && unzip -d unziped-84VLW2.desktop
+
+[Added Associations]
+application/x-compressed-tar=userapp-tar -xfz-ZF5BV2.desktop;userapp-tar -xf-EZ36U2.desktop;
+text/plain=org.gnome.gedit.desktop;
+application/x-bzip2-compressed-tar=userapp-tar -xf-EZ36U2.desktop;
+x-scheme-handler/http=userapp-Firefox-08B9U2.desktop;
+x-scheme-handler/https=userapp-Firefox-08B9U2.desktop;
+x-scheme-handler/chrome=userapp-Firefox-08B9U2.desktop;
+text/html=userapp-Firefox-08B9U2.desktop;
+application/x-extension-htm=userapp-Firefox-08B9U2.desktop;
+application/x-extension-html=userapp-Firefox-08B9U2.desktop;
+application/x-extension-shtml=userapp-Firefox-08B9U2.desktop;
+application/xhtml+xml=userapp-Firefox-08B9U2.desktop;
+application/x-extension-xhtml=userapp-Firefox-08B9U2.desktop;
+application/x-extension-xht=userapp-Firefox-08B9U2.desktop;
+application/x-raw-disk-image-xz-compressed=userapp-tar -xz-H0H4V2.desktop;userapp-tar -xf-EZ36U2.desktop;
+application/zip=userapp-unzip-TMGNW2.desktop;userapp-mkdir unziped && unzip -d unziped-84VLW2.desktop;

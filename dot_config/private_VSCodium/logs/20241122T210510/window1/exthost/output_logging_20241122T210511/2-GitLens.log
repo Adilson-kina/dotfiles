@@ -1,0 +1,4 @@
+GitLens v16.0.3 activating in VSCodium (1.95.3) on the desktop; language='en', logLevel='warn', defaultDateLocale='null' (someValue.machineId|someValue.sessionId)
+To enable debug logging, set `"gitlens.outputLevel: "debug"` or run "GitLens: Enable Debug Logging" from the Command Palette
+[2024-11-22 21:05:49.227] loadLocalRepoDataMap
+EntryNotFound (FileSystemError): Error: ENOENT: no such file or directory, open '/home/adilson/.gk/repoMapping.json'

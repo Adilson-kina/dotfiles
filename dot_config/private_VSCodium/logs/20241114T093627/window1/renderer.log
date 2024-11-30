@@ -1,0 +1,42 @@
+2024-11-14 09:36:27.798 [warning] Settings pattern "issueReporter.*" doesn't match any settings
+2024-11-14 09:36:27.993 [info] Started local extension host with pid 21286.
+2024-11-14 09:36:28.064 [error] TreeError [SettingsTree] Tree element not found: [object Object]: Error: TreeError [SettingsTree] Tree element not found: [object Object]
+    at ucs.getElementLocation (vscode-file://vscode-app/opt/vscodium-bin/resources/app/out/vs/workbench/workbench.desktop.main.js:416:10495)
+    at ucs.rerender (vscode-file://vscode-app/opt/vscodium-bin/resources/app/out/vs/workbench/workbench.desktop.main.js:416:8594)
+    at d9e.rerender (vscode-file://vscode-app/opt/vscodium-bin/resources/app/out/vs/workbench/workbench.desktop.main.js:416:18374)
+    at gb.refreshSingleElement (vscode-file://vscode-app/opt/vscodium-bin/resources/app/out/vs/workbench/workbench.desktop.main.js:1334:67114)
+    at gb.renderTree (vscode-file://vscode-app/opt/vscodium-bin/resources/app/out/vs/workbench/workbench.desktop.main.js:1334:66898)
+    at vscode-file://vscode-app/opt/vscodium-bin/resources/app/out/vs/workbench/workbench.desktop.main.js:1334:65971
+    at Set.forEach (<anonymous>)
+    at gb.updateElementsByKey (vscode-file://vscode-app/opt/vscodium-bin/resources/app/out/vs/workbench/workbench.desktop.main.js:1334:65955)
+    at vZ.value (vscode-file://vscode-app/opt/vscodium-bin/resources/app/out/vs/workbench/workbench.desktop.main.js:1334:43704)
+    at E._deliver (vscode-file://vscode-app/opt/vscodium-bin/resources/app/out/vs/workbench/workbench.desktop.main.js:30:923)
+2024-11-14 09:36:28.810 [warning] Settings pattern "issueReporter.*" doesn't match any settings
+2024-11-14 09:36:32.696 [info] [perf] Render performance baseline is 138ms
+2024-11-14 09:38:58.449 [info] Started local extension host with pid 21902.
+2024-11-14 09:39:01.573 [info] [perf] Render performance baseline is 135ms
+2024-11-14 09:39:12.108 [info] Started local extension host with pid 21999.
+2024-11-14 09:40:25.655 [error] Unable to read file '/home/adilson/clone/git-test-repo/README.md' (Error: File not modified since): Error: Unable to read file '/home/adilson/clone/git-test-repo/README.md' (Error: File not modified since)
+    at Pnt.restoreReadError (vscode-file://vscode-app/opt/vscodium-bin/resources/app/out/vs/workbench/workbench.desktop.main.js:3088:96481)
+    at Pnt.doReadFileStream (vscode-file://vscode-app/opt/vscodium-bin/resources/app/out/vs/workbench/workbench.desktop.main.js:3088:96346)
+    at async qnt.doRead (vscode-file://vscode-app/opt/vscodium-bin/resources/app/out/vs/workbench/workbench.desktop.main.js:3095:12969)
+    at async qnt.readStream (vscode-file://vscode-app/opt/vscodium-bin/resources/app/out/vs/workbench/workbench.desktop.main.js:3095:12724)
+    at async Aue.resolveFromFile (vscode-file://vscode-app/opt/vscodium-bin/resources/app/out/vs/workbench/workbench.desktop.main.js:1275:15912)
+    at async Aue.resolve (vscode-file://vscode-app/opt/vscodium-bin/resources/app/out/vs/workbench/workbench.desktop.main.js:1275:14074)
+    at async vscode-file://vscode-app/opt/vscodium-bin/resources/app/out/vs/workbench/workbench.desktop.main.js:3095:7686
+2024-11-14 09:40:25.656 [error] Unable to read file 'git:/home/adilson/clone/git-test-repo/README.md?{"path":"/home/adilson/clone/git-test-repo/README.md","ref":"972f1f1a532145db9a23e570f0405921b82a3da7"}' (Error: File not modified since): Error: Unable to read file 'git:/home/adilson/clone/git-test-repo/README.md?{"path":"/home/adilson/clone/git-test-repo/README.md","ref":"972f1f1a532145db9a23e570f0405921b82a3da7"}' (Error: File not modified since)
+    at Pnt.restoreReadError (vscode-file://vscode-app/opt/vscodium-bin/resources/app/out/vs/workbench/workbench.desktop.main.js:3088:96481)
+    at Pnt.doReadFileStream (vscode-file://vscode-app/opt/vscodium-bin/resources/app/out/vs/workbench/workbench.desktop.main.js:3088:96346)
+    at async qnt.doRead (vscode-file://vscode-app/opt/vscodium-bin/resources/app/out/vs/workbench/workbench.desktop.main.js:3095:12969)
+    at async qnt.readStream (vscode-file://vscode-app/opt/vscodium-bin/resources/app/out/vs/workbench/workbench.desktop.main.js:3095:12724)
+    at async Aue.resolveFromFile (vscode-file://vscode-app/opt/vscodium-bin/resources/app/out/vs/workbench/workbench.desktop.main.js:1275:15912)
+    at async Aue.resolve (vscode-file://vscode-app/opt/vscodium-bin/resources/app/out/vs/workbench/workbench.desktop.main.js:1275:14074)
+    at async vscode-file://vscode-app/opt/vscodium-bin/resources/app/out/vs/workbench/workbench.desktop.main.js:3095:7686
+2024-11-14 09:40:25.657 [error] Unable to read file 'git:/home/adilson/clone/git-test-repo/README.md?{"path":"/home/adilson/clone/git-test-repo/README.md","ref":"02d45c5c199015453933ad699b504c16da2ff115"}' (Error: File not modified since): Error: Unable to read file 'git:/home/adilson/clone/git-test-repo/README.md?{"path":"/home/adilson/clone/git-test-repo/README.md","ref":"02d45c5c199015453933ad699b504c16da2ff115"}' (Error: File not modified since)
+    at Pnt.restoreReadError (vscode-file://vscode-app/opt/vscodium-bin/resources/app/out/vs/workbench/workbench.desktop.main.js:3088:96481)
+    at Pnt.doReadFileStream (vscode-file://vscode-app/opt/vscodium-bin/resources/app/out/vs/workbench/workbench.desktop.main.js:3088:96346)
+    at async qnt.doRead (vscode-file://vscode-app/opt/vscodium-bin/resources/app/out/vs/workbench/workbench.desktop.main.js:3095:12969)
+    at async qnt.readStream (vscode-file://vscode-app/opt/vscodium-bin/resources/app/out/vs/workbench/workbench.desktop.main.js:3095:12724)
+    at async Aue.resolveFromFile (vscode-file://vscode-app/opt/vscodium-bin/resources/app/out/vs/workbench/workbench.desktop.main.js:1275:15912)
+    at async Aue.resolve (vscode-file://vscode-app/opt/vscodium-bin/resources/app/out/vs/workbench/workbench.desktop.main.js:1275:14074)
+    at async vscode-file://vscode-app/opt/vscodium-bin/resources/app/out/vs/workbench/workbench.desktop.main.js:3095:7686

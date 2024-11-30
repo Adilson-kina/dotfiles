@@ -1,0 +1,30 @@
+2024-11-14 09:40:49.538 [info] Started local extension host with pid 22380.
+2024-11-14 09:40:49.724 [info] Placing extension(s) asvetliakov.vscode-neovim on a separate extension host.
+2024-11-14 09:40:49.827 [info] Started local extension host with pid 22396.
+2024-11-14 09:40:53.285 [info] [perf] Render performance baseline is 137ms
+2024-11-14 09:44:15.123 [error] Unable to read file 'git:/home/adilson/clone/git-test-repo/README.md?{"path":"/home/adilson/clone/git-test-repo/README.md","ref":"27be9036035cf6c1e6dfd1867d4b28558894fe25"}' (Error: File not modified since): Error: Unable to read file 'git:/home/adilson/clone/git-test-repo/README.md?{"path":"/home/adilson/clone/git-test-repo/README.md","ref":"27be9036035cf6c1e6dfd1867d4b28558894fe25"}' (Error: File not modified since)
+    at Pnt.restoreReadError (vscode-file://vscode-app/opt/vscodium-bin/resources/app/out/vs/workbench/workbench.desktop.main.js:3088:96481)
+    at Pnt.doReadFileStream (vscode-file://vscode-app/opt/vscodium-bin/resources/app/out/vs/workbench/workbench.desktop.main.js:3088:96346)
+    at async qnt.doRead (vscode-file://vscode-app/opt/vscodium-bin/resources/app/out/vs/workbench/workbench.desktop.main.js:3095:12969)
+    at async qnt.readStream (vscode-file://vscode-app/opt/vscodium-bin/resources/app/out/vs/workbench/workbench.desktop.main.js:3095:12724)
+    at async Aue.resolveFromFile (vscode-file://vscode-app/opt/vscodium-bin/resources/app/out/vs/workbench/workbench.desktop.main.js:1275:15912)
+    at async Aue.resolve (vscode-file://vscode-app/opt/vscodium-bin/resources/app/out/vs/workbench/workbench.desktop.main.js:1275:14074)
+    at async vscode-file://vscode-app/opt/vscodium-bin/resources/app/out/vs/workbench/workbench.desktop.main.js:3095:7686
+2024-11-14 09:44:15.124 [error] Unable to read file 'git:/home/adilson/clone/git-test-repo/README.md?{"path":"/home/adilson/clone/git-test-repo/README.md","ref":"c4496cd0823124c0698c9aacc55f76fd85ff1a00"}' (Error: File not modified since): Error: Unable to read file 'git:/home/adilson/clone/git-test-repo/README.md?{"path":"/home/adilson/clone/git-test-repo/README.md","ref":"c4496cd0823124c0698c9aacc55f76fd85ff1a00"}' (Error: File not modified since)
+    at Pnt.restoreReadError (vscode-file://vscode-app/opt/vscodium-bin/resources/app/out/vs/workbench/workbench.desktop.main.js:3088:96481)
+    at Pnt.doReadFileStream (vscode-file://vscode-app/opt/vscodium-bin/resources/app/out/vs/workbench/workbench.desktop.main.js:3088:96346)
+    at async qnt.doRead (vscode-file://vscode-app/opt/vscodium-bin/resources/app/out/vs/workbench/workbench.desktop.main.js:3095:12969)
+    at async qnt.readStream (vscode-file://vscode-app/opt/vscodium-bin/resources/app/out/vs/workbench/workbench.desktop.main.js:3095:12724)
+    at async Aue.resolveFromFile (vscode-file://vscode-app/opt/vscodium-bin/resources/app/out/vs/workbench/workbench.desktop.main.js:1275:15912)
+    at async Aue.resolve (vscode-file://vscode-app/opt/vscodium-bin/resources/app/out/vs/workbench/workbench.desktop.main.js:1275:14074)
+    at async vscode-file://vscode-app/opt/vscodium-bin/resources/app/out/vs/workbench/workbench.desktop.main.js:3095:7686
+2024-11-14 09:44:15.134 [error] Diff computation failed: Error: Diff computation failed
+    at mce.computeDiff (vscode-file://vscode-app/opt/vscodium-bin/resources/app/out/vs/workbench/workbench.desktop.main.js:625:6567)
+2024-11-14 09:46:43.317 [error] Unable to read file '/home/adilson/clone/git-test-repo/README.md' (Error: File not modified since): Error: Unable to read file '/home/adilson/clone/git-test-repo/README.md' (Error: File not modified since)
+    at Pnt.restoreReadError (vscode-file://vscode-app/opt/vscodium-bin/resources/app/out/vs/workbench/workbench.desktop.main.js:3088:96481)
+    at Pnt.doReadFileStream (vscode-file://vscode-app/opt/vscodium-bin/resources/app/out/vs/workbench/workbench.desktop.main.js:3088:96346)
+    at async qnt.doRead (vscode-file://vscode-app/opt/vscodium-bin/resources/app/out/vs/workbench/workbench.desktop.main.js:3095:12969)
+    at async qnt.readStream (vscode-file://vscode-app/opt/vscodium-bin/resources/app/out/vs/workbench/workbench.desktop.main.js:3095:12724)
+    at async Aue.resolveFromFile (vscode-file://vscode-app/opt/vscodium-bin/resources/app/out/vs/workbench/workbench.desktop.main.js:1275:15912)
+    at async Aue.resolve (vscode-file://vscode-app/opt/vscodium-bin/resources/app/out/vs/workbench/workbench.desktop.main.js:1275:14074)
+    at async vscode-file://vscode-app/opt/vscodium-bin/resources/app/out/vs/workbench/workbench.desktop.main.js:3095:7686

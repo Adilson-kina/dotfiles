@@ -1,0 +1,5 @@
+{
+    "workbench.iconTheme": "catppuccin-frappe",
+    "editor.wordWrap": "on",
+    "files.autoSave": "onFocusChange"
+}

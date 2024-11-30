@@ -1,0 +1,37 @@
+2024-11-26 21:01:07.965 [info] [main] Log level: Info
+2024-11-26 21:01:07.965 [info] [main] Validating found git in: "git"
+2024-11-26 21:01:07.965 [info] [main] Using git "2.47.0" from "git"
+2024-11-26 21:01:07.965 [info] [Model][doInitialScan] Initial repository scan started
+2024-11-26 21:01:07.965 [info] > git rev-parse --show-toplevel [4ms]
+2024-11-26 21:01:07.965 [info] > git rev-parse --git-dir --git-common-dir [45ms]
+2024-11-26 21:01:07.965 [info] [Model][openRepository] Opened repository: /home/adilson/clone/Restaurante
+2024-11-26 21:01:07.967 [info] > git rev-parse --show-toplevel [11ms]
+2024-11-26 21:01:07.968 [info] > git config --get commit.template [23ms]
+2024-11-26 21:01:08.004 [info] > git rev-parse --show-toplevel [26ms]
+2024-11-26 21:01:08.066 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/germano refs/remotes/germano [64ms]
+2024-11-26 21:01:08.078 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/adilson/clone/Restaurante/.git/refs/remotes/origin/germano'
+2024-11-26 21:01:08.078 [info] > git rev-parse --show-toplevel [13ms]
+2024-11-26 21:01:08.087 [info] > git rev-parse refs/remotes/origin/germano [10ms]
+2024-11-26 21:01:08.115 [info] > git status -z -uall [19ms]
+2024-11-26 21:01:08.116 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [6ms]
+2024-11-26 21:01:08.136 [info] > git rev-parse --show-toplevel [50ms]
+2024-11-26 21:01:08.158 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/germano refs/remotes/germano [25ms]
+2024-11-26 21:01:08.168 [info] > git config --local branch.germano.vscode-merge-base [3ms]
+2024-11-26 21:01:08.174 [info] > git rev-parse --show-toplevel [17ms]
+2024-11-26 21:01:08.175 [info] > git config --get commit.template [26ms]
+2024-11-26 21:01:08.202 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/origin/main refs/remotes/origin/main [28ms]
+2024-11-26 21:01:08.222 [info] > git merge-base refs/heads/germano refs/remotes/origin/germano [13ms]
+2024-11-26 21:01:08.228 [info] > git rev-parse --show-toplevel [26ms]
+2024-11-26 21:01:08.242 [info] > git diff --name-status -z --diff-filter=ADMR b8c56ba340bc1a687fd90e0abd9699c68fd317b2...refs/remotes/origin/germano [15ms]
+2024-11-26 21:01:08.242 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/germano refs/remotes/germano [21ms]
+2024-11-26 21:01:08.256 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/adilson/clone/Restaurante/.git/refs/remotes/origin/germano'
+2024-11-26 21:01:08.256 [info] > git rev-parse --show-toplevel [15ms]
+2024-11-26 21:01:08.256 [info] [Model][doInitialScan] Initial repository scan completed - repositories (1), closed repositories (0), parent repositories (0), unsafe repositories (0)
+2024-11-26 21:01:08.272 [info] > git rev-parse refs/remotes/origin/germano [16ms]
+2024-11-26 21:01:08.289 [info] > git status -z -uall [11ms]
+2024-11-26 21:01:08.289 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [4ms]
+2024-11-26 21:01:08.556 [info] > git check-ignore -v -z --stdin [1ms]
+2024-11-26 21:01:08.613 [info] > git show --textconv :src/restaurante/DatabaseCliente.java [6ms]
+2024-11-26 21:01:08.614 [info] > git ls-files --stage -- /home/adilson/clone/Restaurante/src/restaurante/DatabaseCliente.java [2ms]
+2024-11-26 21:01:08.622 [info] > git cat-file -s 3aa7d054b2e9b5d29e78ee2ddadfef87e03d696b [1ms]
+2024-11-26 21:01:11.989 [info] > git check-ignore -v -z --stdin [1ms]

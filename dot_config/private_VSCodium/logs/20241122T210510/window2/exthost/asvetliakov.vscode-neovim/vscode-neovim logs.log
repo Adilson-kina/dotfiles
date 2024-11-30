@@ -1,0 +1,6 @@
+2024-11-22 21:08:41.152 [info] MessagesManager: '[lspconfig] config "java-language-server" not found. Ensure it is listed in `configs.md` or added as a custom server.\n'
+2024-11-22 21:09:23.952 [info] MessagesManager: '35 more lines\n'
+2024-11-22 21:09:39.952 [warning] DocumentChangeManager: Changes were not applied for file:///home/adilson/clone/pr/src/restaurante/Cliente.java
+2024-11-22 21:09:39.953 [warning] DocumentChangeManager: Edit was canceled for doc: file:///home/adilson/clone/pr/src/restaurante/Cliente.java
+2024-11-22 21:09:41.358 [info] MessagesManager: '1 linha a menos; antes de #3  2 seconds ago\n'
+2024-11-22 21:09:43.745 [info] MessagesManager: '35 more lines\n'

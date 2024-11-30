@@ -1,0 +1,12 @@
+2024-11-22 21:05:43.201 [info] Getting Manifest... eamodio.gitlens
+2024-11-22 21:05:45.910 [info] Installing extension: eamodio.gitlens {"isMachineScoped":false,"installPreReleaseVersion":false,"pinned":false,"profileLocation":{"$mid":1,"external":"vscode-userdata:/home/adilson/.vscode-oss/extensions/extensions.json","path":"/home/adilson/.vscode-oss/extensions/extensions.json","scheme":"vscode-userdata"},"installOnlyNewlyAddedFromExtensionPack":true,"isApplicationScoped":false,"productVersion":{"version":"1.95.3","date":"2024-11-16T01:21:03.577Z"}}
+2024-11-22 21:05:48.660 [info] Extracted extension to file:///home/adilson/.vscode-oss/extensions/eamodio.gitlens-16.0.3-universal: eamodio.gitlens
+2024-11-22 21:05:48.674 [info] Renamed to /home/adilson/.vscode-oss/extensions/eamodio.gitlens-16.0.3-universal
+2024-11-22 21:05:48.700 [info] Extension installed successfully: eamodio.gitlens vscode-userdata:/home/adilson/.vscode-oss/extensions/extensions.json
+2024-11-22 21:05:48.763 [error] [uncaught exception in sharedProcess]: Error: ENOENT: no such file or directory, stat '/home/adilson/.vscode-oss/extensions/extensions.json.vsctmp': EntryNotFound (FileSystemError): Error: ENOENT: no such file or directory, stat '/home/adilson/.vscode-oss/extensions/extensions.json.vsctmp'
+    at um.create (file:///opt/vscodium-bin/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:35:44274)
+    at Ei (file:///opt/vscodium-bin/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:35:44381)
+    at Fn.toFileSystemProviderError (file:///opt/vscodium-bin/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:71:28542)
+    at Fn.stat (file:///opt/vscodium-bin/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:71:20509)
+    at async Zl.stat (file:///opt/vscodium-bin/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:70:101684)
+    at async Gl.onDidFilesChange (file:///opt/vscodium-bin/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:70:79904)

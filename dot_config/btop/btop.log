@@ -1,0 +1,14 @@
+
+2024/10/13 (14:07:18) | ===> btop++ v.1.4.0
+2024/10/13 (14:07:18) | ERROR: Stall in Runner thread, restarting!
+2024/10/13 (14:28:09) | ERROR: Runner thread died unexpectedly!
+
+2024/10/14 (13:36:46) | ===> btop++ v.1.4.0
+2024/10/14 (13:36:46) | ERROR: Stall in Runner thread, restarting!
+
+2024/10/30 (12:46:20) | ===> btop++ v.1.4.0
+2024/10/30 (12:46:20) | INFO: Logger set to INFO
+
+2024/11/04 (11:44:51) | ===> btop++ v.1.4.0
+2024/11/04 (11:44:51) | ERROR: Stall in Runner thread, restarting!
+2024/11/04 (11:46:51) | WARNING: Failed to join _runner thread on exit!

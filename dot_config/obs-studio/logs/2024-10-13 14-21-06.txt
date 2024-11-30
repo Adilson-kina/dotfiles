@@ -1,0 +1,206 @@
+14:21:06.501: Using EGL/X11
+14:21:06.502: CPU Name: AMD Ryzen 5 5600G with Radeon Graphics
+14:21:06.502: CPU Speed: 4133.028MHz
+14:21:06.502: Physical Cores: 6, Logical Cores: 12
+14:21:06.502: Physical Memory: 7362MB Total, 666MB Free
+14:21:06.502: Kernel Version: Linux 6.11.3-arch1-1
+14:21:06.502: Distribution: "Arch Linux" Unknown
+14:21:06.502: Desktop Environment: Hyprland
+14:21:06.502: Session Type: wayland
+14:21:06.502: Window System: X11.0, Vendor: The X.Org Foundation, Version: 1.24.1
+14:21:06.503: Qt Version: 6.7.3 (runtime), 6.7.2 (compiled)
+14:21:06.504: Portable mode: false
+14:21:06.534: OBS 30.2.1-1 (linux)
+14:21:06.534: ---------------------------------
+14:21:06.534: ---------------------------------
+14:21:06.534: audio settings reset:
+14:21:06.534: 	samples per sec: 48000
+14:21:06.534: 	speakers:        2
+14:21:06.534: 	max buffering:   960 milliseconds
+14:21:06.534: 	buffering type:  dynamically increasing
+14:21:06.542: ---------------------------------
+14:21:06.542: Initializing OpenGL...
+14:21:06.672: Loading up OpenGL on adapter AMD AMD Radeon Graphics (radeonsi, renoir, LLVM 18.1.8, DRM 3.59, 6.11.3-arch1-1)
+14:21:06.672: OpenGL loaded successfully, version 4.6 (Core Profile) Mesa 24.2.4-arch1.1, shading language 4.60
+14:21:06.705: ---------------------------------
+14:21:06.705: video settings reset:
+14:21:06.705: 	base resolution:   1920x1080
+14:21:06.705: 	output resolution: 1280x720
+14:21:06.705: 	downscale filter:  Bicubic
+14:21:06.705: 	fps:               30/1
+14:21:06.705: 	format:            NV12
+14:21:06.705: 	YUV mode:          Rec. 709/Partial
+14:21:06.706: NV12 texture support enabled
+14:21:06.706: P010 texture support not available
+14:21:06.714: Audio monitoring device:
+14:21:06.714: 	name: Default
+14:21:06.714: 	id: default
+14:21:06.714: ---------------------------------
+14:21:06.731: Failed to load 'en-US' text for module: 'decklink-captions.so'
+14:21:06.747: Failed to load 'en-US' text for module: 'decklink-output-ui.so'
+14:21:06.762: A DeckLink iterator could not be created.  The DeckLink drivers may not be installed
+14:21:06.762: Failed to initialize module 'decklink.so'
+14:21:07.463: [pipewire] No capture sources available
+14:21:07.497: v4l2loopback not installed, virtual camera not registered
+14:21:07.578: VAAPI: Failed to initialize display in vaapi_device_h264_supported
+14:21:07.578: FFmpeg VAAPI H264 encoding not supported
+14:21:07.578: VAAPI: Failed to initialize display in vaapi_device_av1_supported
+14:21:07.578: FFmpeg VAAPI AV1 encoding not supported
+14:21:07.578: VAAPI: Failed to initialize display in vaapi_device_hevc_supported
+14:21:07.578: FFmpeg VAAPI HEVC encoding not supported
+14:21:07.792: ---------------------------------
+14:21:07.792:   Loaded Modules:
+14:21:07.792:     text-freetype2.so
+14:21:07.792:     rtmp-services.so
+14:21:07.792:     obs-x264.so
+14:21:07.792:     obs-webrtc.so
+14:21:07.792:     obs-vst.so
+14:21:07.792:     obs-transitions.so
+14:21:07.792:     obs-qsv11.so
+14:21:07.792:     obs-outputs.so
+14:21:07.792:     obs-libfdk.so
+14:21:07.792:     obs-filters.so
+14:21:07.792:     obs-ffmpeg.so
+14:21:07.792:     linux-v4l2.so
+14:21:07.792:     linux-pulseaudio.so
+14:21:07.792:     linux-pipewire.so
+14:21:07.792:     linux-jack.so
+14:21:07.793:     linux-capture.so
+14:21:07.793:     linux-alsa.so
+14:21:07.793:     image-source.so
+14:21:07.793:     frontend-tools.so
+14:21:07.793:     decklink-output-ui.so
+14:21:07.793:     decklink-captions.so
+14:21:07.793: ---------------------------------
+14:21:07.793: ---------------------------------
+14:21:07.793: Available Encoders:
+14:21:07.793:   Video Encoders:
+14:21:07.793: 	- ffmpeg_svt_av1 (SVT-AV1)
+14:21:07.793: 	- ffmpeg_aom_av1 (AOM AV1)
+14:21:07.793: 	- obs_x264 (x264)
+14:21:07.793:   Audio Encoders:
+14:21:07.793: 	- ffmpeg_aac (FFmpeg AAC)
+14:21:07.793: 	- ffmpeg_opus (FFmpeg Opus)
+14:21:07.793: 	- ffmpeg_pcm_s16le (FFmpeg PCM (16-bit))
+14:21:07.793: 	- ffmpeg_pcm_s24le (FFmpeg PCM (24-bit))
+14:21:07.793: 	- ffmpeg_pcm_f32le (FFmpeg PCM (32-bit float))
+14:21:07.793: 	- ffmpeg_alac (FFmpeg ALAC (24-bit))
+14:21:07.793: 	- ffmpeg_flac (FFmpeg FLAC (16-bit))
+14:21:07.793: 	- libfdk_aac (libfdk AAC)
+14:21:07.793: ==== Startup complete ===============================================
+14:21:07.815: All scene data cleared
+14:21:07.815: ------------------------------------------------
+14:21:07.819: pulse-input: Server name: 'PulseAudio (on PipeWire 1.2.5) 15.0.0'
+14:21:07.819: pulse-input: Audio format: s32le, 48000 Hz, 2 channels
+14:21:07.819: pulse-input: Started recording from 'alsa_output.pci-0000_07_00.6.analog-stereo.monitor' (default)
+14:21:07.819: [Loaded global audio device]: 'Desktop Audio'
+14:21:07.820: pulse-input: Server name: 'PulseAudio (on PipeWire 1.2.5) 15.0.0'
+14:21:07.820: pulse-input: Audio format: s32le, 48000 Hz, 2 channels
+14:21:07.820: pulse-input: Started recording from 'alsa_input.pci-0000_07_00.6.analog-stereo' (default)
+14:21:07.820: [Loaded global audio device]: 'Mic/Aux'
+14:21:07.821: [window-capture: 'Genshin'] update settings:
+14:21:07.821: 	title: Genshin Impact
+14:21:07.821: 	class: genshinimpact.exe
+14:21:07.821: 
+14:21:07.822: Switched to scene 'Scene'
+14:21:07.822: ------------------------------------------------
+14:21:07.822: Loaded scenes:
+14:21:07.822: - scene 'Scene':
+14:21:07.822:     - source: 'Genshin' (xcomposite_input)
+14:21:07.822: ------------------------------------------------
+14:21:08.391: adding 21 milliseconds of audio buffering, total audio buffering is now 21 milliseconds (source: Desktop Audio)
+14:21:08.391: 
+14:21:08.412: adding 21 milliseconds of audio buffering, total audio buffering is now 42 milliseconds (source: Mic/Aux)
+14:21:08.412: 
+14:21:09.182: ---------------------------------
+14:21:09.182: [x264 encoder: 'simple_video_stream'] preset: veryfast
+14:21:09.182: [x264 encoder: 'simple_video_stream'] settings:
+14:21:09.182: 	rate_control: CBR
+14:21:09.182: 	bitrate:      2500
+14:21:09.182: 	buffer size:  2500
+14:21:09.182: 	crf:          23
+14:21:09.182: 	fps_num:      30
+14:21:09.182: 	fps_den:      1
+14:21:09.182: 	width:        1280
+14:21:09.182: 	height:       720
+14:21:09.182: 	keyint:       250
+14:21:09.182: 
+14:21:09.190: libfdk_aac encoder created
+14:21:09.190: libfdk_aac bitrate: 160, channels: 2
+14:21:09.191: ==== Recording Start ===============================================
+14:21:09.191: [ffmpeg muxer: 'simple_file_output'] Writing file '/home/adilson/2024-10-13 14-21-09.mp4'...
+14:21:09.194: Failed to inhibit: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: No such interface “org.freedesktop.portal.Inhibit” on object at path /org/freedesktop/portal/desktop
+14:21:11.956: [ffmpeg muxer: 'simple_file_output'] Output of file '/home/adilson/2024-10-13 14-21-09.mp4' stopped
+14:21:11.956: Output 'simple_file_output': stopping
+14:21:11.956: Output 'simple_file_output': Total frames output: 50
+14:21:11.956: Output 'simple_file_output': Total drawn frames: 83
+14:21:11.956: ==== Recording Stop ================================================
+14:21:11.981: libfdk_aac encoder destroyed
+14:21:17.596: ---------------------------------
+14:21:17.597: [x264 encoder: 'simple_video_stream'] preset: veryfast
+14:21:17.597: [x264 encoder: 'simple_video_stream'] settings:
+14:21:17.597: 	rate_control: CBR
+14:21:17.597: 	bitrate:      2500
+14:21:17.597: 	buffer size:  2500
+14:21:17.597: 	crf:          23
+14:21:17.597: 	fps_num:      30
+14:21:17.597: 	fps_den:      1
+14:21:17.597: 	width:        1280
+14:21:17.597: 	height:       720
+14:21:17.597: 	keyint:       250
+14:21:17.597: 
+14:21:17.618: libfdk_aac encoder created
+14:21:17.618: libfdk_aac bitrate: 160, channels: 2
+14:21:17.619: ==== Recording Start ===============================================
+14:21:17.619: [ffmpeg muxer: 'simple_file_output'] Writing file '/home/adilson/2024-10-13 14-21-17.mp4'...
+14:21:17.622: Failed to inhibit: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: No such interface “org.freedesktop.portal.Inhibit” on object at path /org/freedesktop/portal/desktop
+14:21:20.191: [ffmpeg muxer: 'simple_file_output'] Output of file '/home/adilson/2024-10-13 14-21-17.mp4' stopped
+14:21:20.191: Output 'simple_file_output': stopping
+14:21:20.191: Output 'simple_file_output': Total frames output: 44
+14:21:20.191: Output 'simple_file_output': Total drawn frames: 77
+14:21:20.191: ==== Recording Stop ================================================
+14:21:20.227: libfdk_aac encoder destroyed
+14:32:25.992: ---------------------------------
+14:32:25.994: [x264 encoder: 'simple_video_stream'] preset: veryfast
+14:32:25.996: [x264 encoder: 'simple_video_stream'] settings:
+14:32:25.996: 	rate_control: CBR
+14:32:25.996: 	bitrate:      2500
+14:32:25.996: 	buffer size:  2500
+14:32:25.996: 	crf:          23
+14:32:25.996: 	fps_num:      30
+14:32:25.996: 	fps_den:      1
+14:32:25.996: 	width:        1280
+14:32:25.996: 	height:       720
+14:32:25.996: 	keyint:       250
+14:32:25.996: 
+14:32:26.016: libfdk_aac encoder created
+14:32:26.016: libfdk_aac bitrate: 160, channels: 2
+14:32:26.024: ==== Recording Start ===============================================
+14:32:26.024: [ffmpeg muxer: 'simple_file_output'] Writing file '/home/adilson/2024-10-13 14-32-25.mp4'...
+14:32:26.030: Failed to inhibit: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: No such interface “org.freedesktop.portal.Inhibit” on object at path /org/freedesktop/portal/desktop
+14:32:37.814: [ffmpeg muxer: 'simple_file_output'] Output of file '/home/adilson/2024-10-13 14-32-25.mp4' stopped
+14:32:37.814: Output 'simple_file_output': stopping
+14:32:37.814: Output 'simple_file_output': Total frames output: 316
+14:32:37.814: Output 'simple_file_output': Total drawn frames: 353
+14:32:37.814: Video stopped, number of skipped frames due to encoding lag: 2/352 (0.6%)
+14:32:37.815: ==== Recording Stop ================================================
+14:32:37.846: libfdk_aac encoder destroyed
+14:38:45.080: User added scene 'screen'
+14:38:45.088: User switched to scene 'screen'
+14:38:50.635: xshm-input: Geometry 1920x1080 @ 0,0
+14:38:50.653: User added source 'Captura de tela (XSHM)' (xshm_input) to scene 'screen'
+14:40:14.943: obs-data.c: [obs_data_create_from_json] Failed reading json string (1): '[' or '{' expected near end of file
+14:40:14.943: obs-data.c: [obs_data_create_from_json] Failed reading json string (1): '[' or '{' expected near end of file
+14:40:14.949: User added source 'Dispositivo de captura de vídeo (PipeWire) (BETA)' (pipewire-camera-source) to scene 'screen'
+14:40:14.962: [camera-portal] Selected resolution for ''
+14:40:14.962: [camera-portal] Selected format for ''
+14:40:14.962: [camera-portal] selected camera ''
+14:40:14.979: [camera-portal] Error accessing camera: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: No such interface “org.freedesktop.portal.Camera” on object at path /org/freedesktop/portal/desktop
+14:40:17.529: [camera-portal] Updating device 
+14:40:23.312: User Removed source 'Dispositivo de captura de vídeo (PipeWire) (BETA)' (pipewire-camera-source) from scene 'screen'
+14:40:32.294: xshm-input: Geometry 1920x1080 @ 0,0
+14:40:32.303: User added source 'Captura de tela (XSHM) 2' (xshm_input) to scene 'screen'
+14:40:35.090: xshm-input: Geometry 1920x1080 @ 0,0
+14:40:46.056: xshm-input: Geometry 1920x1080 @ 0,0
+14:40:52.238: User Removed source 'Captura de tela (XSHM)' (xshm_input) from scene 'screen'
+14:40:55.920: User Removed source 'Captura de tela (XSHM) 2' (xshm_input) from scene 'screen'

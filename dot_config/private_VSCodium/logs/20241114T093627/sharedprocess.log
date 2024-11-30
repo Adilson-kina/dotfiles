@@ -1,0 +1,12 @@
+2024-11-14 09:38:40.397 [info] Getting Manifest... asvetliakov.vscode-neovim
+2024-11-14 09:38:42.154 [info] Installing extension: asvetliakov.vscode-neovim {"isMachineScoped":false,"installPreReleaseVersion":false,"pinned":false,"profileLocation":{"$mid":1,"external":"vscode-userdata:/home/adilson/.vscode-oss/extensions/extensions.json","path":"/home/adilson/.vscode-oss/extensions/extensions.json","scheme":"vscode-userdata"},"installOnlyNewlyAddedFromExtensionPack":true,"isApplicationScoped":false,"productVersion":{"version":"1.95.2","date":"2024-11-08T18:21:12.757Z"}}
+2024-11-14 09:38:43.259 [info] Extracted extension to file:///home/adilson/.vscode-oss/extensions/asvetliakov.vscode-neovim-1.18.14-universal: asvetliakov.vscode-neovim
+2024-11-14 09:38:43.263 [info] Renamed to /home/adilson/.vscode-oss/extensions/asvetliakov.vscode-neovim-1.18.14-universal
+2024-11-14 09:38:43.273 [info] Extension installed successfully: asvetliakov.vscode-neovim vscode-userdata:/home/adilson/.vscode-oss/extensions/extensions.json
+2024-11-14 09:38:43.346 [error] [uncaught exception in sharedProcess]: Error: ENOENT: no such file or directory, stat '/home/adilson/.vscode-oss/extensions/extensions.json.vsctmp': EntryNotFound (FileSystemError): Error: ENOENT: no such file or directory, stat '/home/adilson/.vscode-oss/extensions/extensions.json.vsctmp'
+    at um.create (file:///opt/vscodium-bin/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:35:44172)
+    at Ei (file:///opt/vscodium-bin/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:35:44279)
+    at Fn.toFileSystemProviderError (file:///opt/vscodium-bin/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:71:28542)
+    at Fn.stat (file:///opt/vscodium-bin/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:71:20509)
+    at async Zl.stat (file:///opt/vscodium-bin/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:70:101684)
+    at async Gl.onDidFilesChange (file:///opt/vscodium-bin/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:70:79904)

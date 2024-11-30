@@ -1,0 +1,5 @@
+2024-11-22 21:06:12.065 [info] MessagesManager: '[lspconfig] config "java-language-server" not found. Ensure it is listed in `configs.md` or added as a custom server.\n'
+2024-11-22 21:07:02.577 [info] MessagesManager: '9 lines yanked\n'
+2024-11-22 21:07:10.706 [info] MessagesManager: '9 more lines\n'
+2024-11-22 21:09:19.278 [info] MessagesManager: '35 lines yanked\n'
+2024-11-22 21:09:36.510 [info] MessagesManager: '35 lines yanked\n'

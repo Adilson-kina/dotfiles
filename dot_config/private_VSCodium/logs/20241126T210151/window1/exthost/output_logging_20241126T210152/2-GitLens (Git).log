@@ -1,0 +1,42 @@
+[2024-11-26 21:01:55.019] [          6ms] [/home/adilson/code/web/School/react-forms] git rev-parse --show-toplevel • FAILED
+
+Error: Command failed: /usr/bin/git -c core.quotepath=false -c color.ui=false rev-parse --show-toplevel
+fatal: not a git repository (or any of the parent directories): .git
+
+
+[2024-11-26 21:01:58.076] [         88ms] [/home/adilson/code/web/School/react-forms] git rev-parse --show-toplevel • FAILED
+
+Error: Command failed: /usr/bin/git -c core.quotepath=false -c color.ui=false rev-parse --show-toplevel
+fatal: not a git repository (or any of the parent directories): .git
+
+
+[2024-11-26 21:02:05.669] [         55ms] [/home/adilson/code/web/School/react-forms/src] git rev-parse --show-toplevel • FAILED
+
+Error: Command failed: /usr/bin/git -c core.quotepath=false -c color.ui=false rev-parse --show-toplevel
+fatal: not a git repository (or any of the parent directories): .git
+
+
+[2024-11-26 21:02:06.270] [         14ms] [/home/adilson/code/web/School/react-forms/src] git rev-parse --show-toplevel • FAILED
+
+Error: Command failed: /usr/bin/git -c core.quotepath=false -c color.ui=false rev-parse --show-toplevel
+fatal: not a git repository (or any of the parent directories): .git
+
+
+[2024-11-26 21:02:58.145] [         43ms] [/home/adilson/code/web/School/react-forms/src] git rev-parse --show-toplevel • FAILED
+
+Error: Command failed: /usr/bin/git -c core.quotepath=false -c color.ui=false rev-parse --show-toplevel
+fatal: not a git repository (or any of the parent directories): .git
+
+
+[2024-11-26 21:40:17.501] [         13ms] [/opt/vscodium-bin/resources/app/extensions/node_modules/typescript/lib] git rev-parse --show-toplevel • FAILED
+
+Error: Command failed: /usr/bin/git -c core.quotepath=false -c color.ui=false rev-parse --show-toplevel
+fatal: not a git repository (or any of the parent directories): .git
+
+
+[2024-11-26 21:45:38.573] [         13ms] [/home/adilson/.cache/typescript/5.6/node_modules/@types/react] git rev-parse --show-toplevel • FAILED
+
+Error: Command failed: /usr/bin/git -c core.quotepath=false -c color.ui=false rev-parse --show-toplevel
+fatal: not a git repository (or any of the parent directories): .git
+
+

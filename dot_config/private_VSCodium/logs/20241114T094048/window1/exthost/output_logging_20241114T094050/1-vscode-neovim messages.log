@@ -1,0 +1,185 @@
+:!git switch experimental
+:!git switch experimental
+
+                  -`
+                 .o+`
+                `ooo/
+               `+oooo:
+              `+oooooo:
+              -+oooooo+:
+            `/:-:++oooo+:
+           `/++++/+++++++:
+          `/++++++++++++++:
+         `/+++ooooooooooooo/`
+        ./ooosssso++osssssso+`
+       .oossssso-````/ossssss+`
+      -osssssso.      :ssssssso.
+     :osssssss/        osssso+++.
+    /ossssssss/        +ssssooo/-
+  `/ossssso+/:-        -:/+osssso+-
+ `+sso+:-`                 `.-/+oso:
+`++:.                           `-/+/
+.`                                 `/^[[1G^[[18A
+:!git switch experimental
+
+                  -`
+                 .o+`
+                `ooo/
+               `+oooo:
+              `+oooooo:
+              -+oooooo+:
+            `/:-:++oooo+:
+           `/++++/+++++++:
+          `/++++++++++++++:
+         `/+++ooooooooooooo/`
+        ./ooosssso++osssssso+`
+       .oossssso-````/ossssss+`
+      -osssssso.      :ssssssso.
+     :osssssss/        osssso+++.
+    /ossssssss/        +ssssooo/-
+  `/ossssso+/:-        -:/+osssso+-
+ `+sso+:-`                 `.-/+oso:
+`++:.                           `-/+/
+.`                                 `/^[[1G^[[18A
+^[[41Cadilson@archlinux
+^[[41C-----------------
+^[[41COS: Arch Linux x86_64
+^[[41CHost: APM-A520G
+^[[41CKernel: Linux 6.11.5-arch1-1
+^[[41CUptime: 59 mins
+^[[41CPackages: 1025 (pacman)
+^[[41CShell: fish 3.7.1
+^[[41CDisplay (HORIZON Z21): 1920x1080 @ 60 Hz in 22" [External]
+^[[41CWM: Hyprland (Wayland)
+^[[41CCursor: Adwaita
+^[[41CTerminal: nvim
+^[[41CCPU: AMD Ryzen 5 5600G (12) @ 4.46 GHz
+^[[41CGPU: AMD Radeon Vega Series / Radeon Vega Mobile Series [Integrated]
+^[[41CMemory: 4.84 GiB / 7.19 GiB (67%)
+^[[41CSwap: 256.00 KiB / 4.00 GiB (0%)
+^[[41CDisk (/): 24.30 GiB / 33.75 GiB (72%) - ext4
+^[[41CDisk (/mnt/windows): 171.24 GiB / 187.84 GiB (91%) - fuseblk
+^[[41CLocal IP (enp6s0): 192.168.0.253/24
+^[[41CLocale: pt_BR.UTF-8
+^[[41C
+^[[41C^[[40m   ^[[41m   ^[[42m   ^[[43m   ^[[44m   ^[[45m   ^[[46m   ^[[47m   ^[[m
+^[[41C^[[100m   ^[[101m   ^[[102m   ^[[103m   ^[[104m   ^[[105m   ^[[106m   ^[[107m   ^[[m
+:!git switch experimental
+
+                  -`
+                 .o+`
+                `ooo/
+               `+oooo:
+              `+oooooo:
+              -+oooooo+:
+            `/:-:++oooo+:
+           `/++++/+++++++:
+          `/++++++++++++++:
+         `/+++ooooooooooooo/`
+        ./ooosssso++osssssso+`
+       .oossssso-````/ossssss+`
+      -osssssso.      :ssssssso.
+     :osssssss/        osssso+++.
+    /ossssssss/        +ssssooo/-
+  `/ossssso+/:-        -:/+osssso+-
+ `+sso+:-`                 `.-/+oso:
+`++:.                           `-/+/
+.`                                 `/^[[1G^[[18A
+^[[41Cadilson@archlinux
+^[[41C-----------------
+^[[41COS: Arch Linux x86_64
+^[[41CHost: APM-A520G
+^[[41CKernel: Linux 6.11.5-arch1-1
+^[[41CUptime: 59 mins
+^[[41CPackages: 1025 (pacman)
+^[[41CShell: fish 3.7.1
+^[[41CDisplay (HORIZON Z21): 1920x1080 @ 60 Hz in 22" [External]
+^[[41CWM: Hyprland (Wayland)
+^[[41CCursor: Adwaita
+^[[41CTerminal: nvim
+^[[41CCPU: AMD Ryzen 5 5600G (12) @ 4.46 GHz
+^[[41CGPU: AMD Radeon Vega Series / Radeon Vega Mobile Series [Integrated]
+^[[41CMemory: 4.84 GiB / 7.19 GiB (67%)
+^[[41CSwap: 256.00 KiB / 4.00 GiB (0%)
+^[[41CDisk (/): 24.30 GiB / 33.75 GiB (72%) - ext4
+^[[41CDisk (/mnt/windows): 171.24 GiB / 187.84 GiB (91%) - fuseblk
+^[[41CLocal IP (enp6s0): 192.168.0.253/24
+^[[41CLocale: pt_BR.UTF-8
+^[[41C
+^[[41C^[[40m   ^[[41m   ^[[42m   ^[[43m   ^[[44m   ^[[45m   ^[[46m   ^[[47m   ^[[m
+^[[41C^[[100m   ^[[101m   ^[[102m   ^[[103m   ^[[104m   ^[[105m   ^[[106m   ^[[107m   ^[[m
+
+fatal: cannot switch branch while merging
+Consider "git merge --quit" or "git worktree add".
+:!git switch experimental
+
+                  -`
+                 .o+`
+                `ooo/
+               `+oooo:
+              `+oooooo:
+              -+oooooo+:
+            `/:-:++oooo+:
+           `/++++/+++++++:
+          `/++++++++++++++:
+         `/+++ooooooooooooo/`
+        ./ooosssso++osssssso+`
+       .oossssso-````/ossssss+`
+      -osssssso.      :ssssssso.
+     :osssssss/        osssso+++.
+    /ossssssss/        +ssssooo/-
+  `/ossssso+/:-        -:/+osssso+-
+ `+sso+:-`                 `.-/+oso:
+`++:.                           `-/+/
+.`                                 `/^[[1G^[[18A
+^[[41Cadilson@archlinux
+^[[41C-----------------
+^[[41COS: Arch Linux x86_64
+^[[41CHost: APM-A520G
+^[[41CKernel: Linux 6.11.5-arch1-1
+^[[41CUptime: 59 mins
+^[[41CPackages: 1025 (pacman)
+^[[41CShell: fish 3.7.1
+^[[41CDisplay (HORIZON Z21): 1920x1080 @ 60 Hz in 22" [External]
+^[[41CWM: Hyprland (Wayland)
+^[[41CCursor: Adwaita
+^[[41CTerminal: nvim
+^[[41CCPU: AMD Ryzen 5 5600G (12) @ 4.46 GHz
+^[[41CGPU: AMD Radeon Vega Series / Radeon Vega Mobile Series [Integrated]
+^[[41CMemory: 4.84 GiB / 7.19 GiB (67%)
+^[[41CSwap: 256.00 KiB / 4.00 GiB (0%)
+^[[41CDisk (/): 24.30 GiB / 33.75 GiB (72%) - ext4
+^[[41CDisk (/mnt/windows): 171.24 GiB / 187.84 GiB (91%) - fuseblk
+^[[41CLocal IP (enp6s0): 192.168.0.253/24
+^[[41CLocale: pt_BR.UTF-8
+^[[41C
+^[[41C^[[40m   ^[[41m   ^[[42m   ^[[43m   ^[[44m   ^[[45m   ^[[46m   ^[[47m   ^[[m
+^[[41C^[[100m   ^[[101m   ^[[102m   ^[[103m   ^[[104m   ^[[105m   ^[[106m   ^[[107m   ^[[m
+
+fatal: cannot switch branch while merging
+Consider "git merge --quit" or "git worktree add".
+
+
+o shell devolveu 128
+
+4 fewer lines
+2 alterações; antes de #13  5 seconds ago
+1 linha a mais; antes de #12  5 seconds ago
+1 linha a menos; antes de #11  16 seconds ago
+1 linha a mais; antes de #10  31 seconds ago
+1 linha a mais; antes de #9  63 seconds ago
+1 linha a mais; antes de #8  64 seconds ago
+1 linha a mais; antes de #7  65 seconds ago
+4 linhas a menos; antes de #6  69 seconds ago
+1 linha a mais; antes de #5  09:42:08
+1 alteração; antes de #4  09:42:07
+4 linhas a mais; antes de #3  09:42:06
+5 linhas a menos; antes de #2  09:42:00
+Já está na alteração mais antiga
+Já está na alteração mais antiga
+Já está na alteração mais antiga
+Já está na alteração mais antiga
+Já está na alteração mais antiga
+Já está na alteração mais antiga
+1 linha a menos; antes de #14  3 seconds ago
+E20: Marca não definida
