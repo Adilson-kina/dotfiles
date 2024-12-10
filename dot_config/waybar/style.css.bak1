@@ -7,7 +7,7 @@
 }
 
 window#waybar{
-  background-color: rgba(255, 0, 0, 0);
+  background-color: rgba(255, 0, 0, 100);
 }
 
 #workspaces{
@@ -30,23 +30,20 @@ window#waybar{
 
 #cpu{
   margin: 2px 10px 2px 0;
-  background-color: #333333;
+background-color: #333333;
   padding: 0 10px 0 7px;
-  color: #00aa22;
 }
 
 #memory{
   margin: 2px 10px 2px 0;
   background-color: #333333;
   padding: 0 10px 0 7px;
-  color: #00aa22;
 }
 
 #network{
   margin: 2px 10px 2px 0;
   background-color: #333333;
   padding: 0 16px 0 7px;
-  color: #007afc;
 }
 
 #custom-power{
@@ -57,7 +54,6 @@ window#waybar{
 }
 
 #pulseaudio{
-  color: #fc4800;
   margin: 2px 10px 2px 0;
   background-color: #333333;
   padding: 0 14px 0 7px;

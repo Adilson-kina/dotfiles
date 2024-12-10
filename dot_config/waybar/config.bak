@@ -1,7 +1,7 @@
 {
     "layer": "top", 
     "position": "top", 
-    "height": 30, 
+    "height": 24, 
     "modules-left": [
       "hyprland/workspaces"
     ],
@@ -16,7 +16,7 @@
       "custom/power"
     ],
     "clock": {
-        "format-alt": "{:%d/%m/%Y}"
+        "format-alt": "{:%d-%m-%Y}"
     },
     "cpu": {
         "format": "{usage}% "

@@ -16,7 +16,7 @@
       "custom/power"
     ],
     "clock": {
-        "format-alt": "{:%d/%m/%Y}"
+        "format-alt": "{:%d-%m-%Y}"
     },
     "cpu": {
         "format": "{usage}% "
