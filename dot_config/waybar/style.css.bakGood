@@ -1,0 +1,84 @@
+@import "macchiato.css";
+
+#waybar{
+  background-color: @base;
+  opacity: 0.9;
+}
+
+#workspaces{
+  margin: 5px 5px;
+  background-color: @surface0;
+  border-radius: 1rem;
+}
+
+#workspaces button{
+  margin: 5px 2px;
+  border-radius: 1rem;
+  background: @pink;
+  color: @crust;
+}
+
+#workspaces button:hover {
+  background: @mauve;
+}
+
+#workspaces button.active {
+  background: @red;
+  color: @crust;
+}
+
+#clock{
+  color: @text;
+  background-color: @surface0;
+  border-radius: 1rem;
+  margin: 5px;
+  padding: 0 1rem;
+}
+
+.modules-right{
+  margin: 5px;
+  border-radius: 1rem;
+  padding: 0 1rem;
+  color: @text;
+  background-color: @surface0;
+}
+
+#pulseaudio{
+  background-color: @pink;
+  color: @crust;
+  margin: 5px;
+  border-radius: 2rem;
+  padding: 0 15px 0 10px;
+}
+
+#network{
+  background-color: @pink;
+  color: @crust;
+  margin: 5px;
+  border-radius: 2rem;
+  padding: 0 15px 0 10px;
+}
+
+#cpu{
+  background-color: @pink;
+  color: @crust;
+  margin: 5px;
+  border-radius: 2rem;
+  padding: 0 15px 0 10px;
+}
+
+#memory{
+  background-color: @pink;
+  color: @crust;
+  margin: 5px;
+  border-radius: 2rem;
+  padding: 0 15px 0 10px;
+}
+
+#custom-power{
+  background-color: @pink;
+  color: @crust;
+  margin: 5px;
+  border-radius: 2rem;
+  padding: 0 8px 0 12px;
+}
