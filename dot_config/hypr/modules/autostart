@@ -8,3 +8,8 @@ exec-once = /usr/bin/pipewire &
 exec-once = /usr/bin/pipewire-pulse &
 exec-once = /usr/bin/wireplumber &
 exec-once = waybar &
+exec = dunst &
+exec = flatpak run com.rtosta.zapzap &
+exec = kill $(pgrep eww)
+exec = eww open bar &
+

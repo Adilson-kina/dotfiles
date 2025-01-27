@@ -51,6 +51,9 @@ return {
     cmd = { 'LiveServerStart', 'LiveServerStop' },
     config = true
   },
+  {
+    'https://github.com/elkowar/yuck.vim.git'
+  },
   -- {
   -- 	"nvim-treesitter/nvim-treesitter",
   -- 	opts = {

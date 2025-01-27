@@ -1,0 +1,8 @@
+{
+    "players": ["spotify"],
+    "align": "center",
+    "layout": "top-to-bottom",
+    "hidden": [],
+    "progress": "󰝤",
+    "empty": "󰁱"
+}

@@ -6,13 +6,14 @@ $mainMod = SUPER
 $CtrlAlt = LeftControl, Alt_L
 $terminal = kitty
 $fileManager = nautilus 
-$menu = rofi -show drun
+$menu = wofi --show drun
 
 bind = CtrlALt, b, exec, firefox
 bind = SUPER, F, fullscreen 
-bind = SUPER, K, exec, hyprctl kill
+bind = CtrlAlt, K, exec, hyprctl kill
 bind = SUPER, W, exec, /opt/scripts/restartWaybar
 bind = SUPER, D, exec, hyprctl activewindow >> $HOME/log.txt
+bind = SUPER, O, exec, ./reloadDunst
 
 # See https://wiki.hyprland.org/Configuring/Keywords/
 

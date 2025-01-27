@@ -23,3 +23,5 @@ windowrulev2 = size 25% 25%, title:Picture-in-Picture
 
 
 windowrulev2 = float, class:org.pulseaudio.pavucontrol
+windowrulev2 = workspace 10, class:ZapZap
+

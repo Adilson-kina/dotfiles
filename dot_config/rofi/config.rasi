@@ -1,0 +1,65 @@
+configuration{
+  display-drun: "Programs";
+  drun-display-format: "{icon} {name}";
+  font: "0xProto Nerd Font 10";
+  modi: "window,run,drun";
+  show-icons: true;
+  icon-theme: "Tela-circle-pink";
+}
+
+@theme "/dev/null"
+
+*{
+  pink: #f5bde6;
+  pink-transparent: #f5bde600;
+  text: #cad3f5;
+  base: #24273a;
+  /*border: 0;
+  margin: 0;
+  padding: 0;
+  spacing: 0;
+  */
+}
+
+window{
+  width: 45%;
+  background-color: @pink;
+}
+
+element{
+  padding: 12;
+  text-color: @base;
+  background-color: @pink;
+}
+
+element selected{
+  text-color: @text;
+  background-color: @pink-transparent;
+}
+
+element-text{
+  background-color: inherit;
+  text-color: inherit;
+  vertical-align: 0.5;
+}
+
+element-icon{
+  size: 30;
+}
+
+entry{
+  background-color: @pink-transparent;
+  padding: 12;
+  text-color: @text;
+}
+
+inputbar{
+  children: [prompt, entry];
+}
+
+
+listview{
+  background-color: @pink-transparent;
+  columns: 1;
+  lines: 10;
+}
