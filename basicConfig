@@ -1,0 +1,80 @@
+#!/bin/bash
+echo "" >> /etc/pacman.conf
+echo "ParallelDownloads = 10" >> /etc/pacman.conf
+echo "Color" >> /etc/pacman.conf
+echo "ILoveCandy" >> /etc/pacman.conf
+
+echo "Instalando aplicativos..."
+pacman -S \
+base-devel \
+chezmoi \
+duf \
+efibootmgr \
+eza \
+fastfetch \
+firefox \
+fish \
+flatpak \
+font-manager \
+gcc \
+git \
+grub \
+hyprland \
+hyprpaper \
+kitty \
+nautilus \
+neovim \
+networkmanager \
+pavucontrol \
+pipewire \
+pipewire-pulse \
+thunar \
+waybar \
+wireplumber \
+wofi 
+
+# yay install
+git clone https://aur.archlinux.org/yay-bin.git && cd yay-bin && makepkg -si
+
+
+echo "configurando usuario"
+useradd -m -G wheel adilson
+chsh -s /usr/bin/fish
+chsh adilson -s /usr/bin/fish 
+
+echo "Digite o password do root:"
+passwd
+
+echo "Digite o password do usuario:"
+passwd adilson
+
+echo "adilson ALL=(ALL:ALL) ALL" >> /etc/sudoers
+
+echo "Configurando dotfiles..."
+chezmoi init --apply Adilson-kina
+
+echo "Configurando bootloader"
+grub-install --target=x86_64-efi --efi-directory=/efi --bootloader-id=Arch
+
+
+git clone https://github.com/catppuccin/grub.git 
+sudo cp -r grub/src/* /usr/share/grub/themes/
+
+echo 'GRUB_THEME="/usr/share/grub/themes/catppuccin-macchiato-grub-theme/theme.txt"' >> /etc/default/grub
+echo "GRUB_GFXMODE=1920x1080" >> /etc/default/grub
+
+
+sudo grub-mkconfig -o /boot/grub/grub.cfg
+
+echo "Configurando internet"
+systemctl enable NetworkManager
+
+timedatectl set-timezone America/Sao_Paulo
+
+
+mkdir /opt/scripts
+echo "#!/bin/bash" >> /opt/scripts/restartWaybar
+echo "" >> /opt/scripts/restartWaybar
+echo "kill $(pgrep waybar)" >> /opt/scripts/restartWaybar
+echo "waybar &" >> /opt/scripts/restartWaybar
+chmod +x /opt/scripts/restartWaybar
