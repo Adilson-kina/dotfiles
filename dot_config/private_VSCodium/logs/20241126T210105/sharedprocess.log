@@ -1,6 +1,0 @@
-2024-11-26 21:01:12.607 [info] Getting Manifest... eamodio.gitlens
-2024-11-26 21:01:16.277 [info] Installing extension: eamodio.gitlens {"productVersion":{"version":"1.95.3","date":"2024-11-16T01:21:03.577Z"},"pinned":false,"operation":3,"isApplicationScoped":false,"profileLocation":{"$mid":1,"external":"vscode-userdata:/home/adilson/.vscode-oss/extensions/extensions.json","path":"/home/adilson/.vscode-oss/extensions/extensions.json","scheme":"vscode-userdata"},"installOnlyNewlyAddedFromExtensionPack":true}
-2024-11-26 21:01:28.369 [info] Extracted extension to file:///home/adilson/.vscode-oss/extensions/eamodio.gitlens-16.0.4-universal: eamodio.gitlens
-2024-11-26 21:01:28.945 [info] Renamed to /home/adilson/.vscode-oss/extensions/eamodio.gitlens-16.0.4-universal
-2024-11-26 21:01:29.068 [info] Marked extension as uninstalled eamodio.gitlens-16.0.3-universal
-2024-11-26 21:01:29.084 [info] Extension installed successfully: eamodio.gitlens vscode-userdata:/home/adilson/.vscode-oss/extensions/extensions.json

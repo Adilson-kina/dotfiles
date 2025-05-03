@@ -1,8 +1,0 @@
-{
-    "workbench.iconTheme": "catppuccin-frappe",
-    "editor.wordWrap": "on",
-    "files.autoSave": "onFocusChange",
-    "extensions.experimental.affinity": {
-        "asvetliakov.vscode-neovim": 1
-    }
-}

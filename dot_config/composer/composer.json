@@ -1,5 +1,0 @@
-{
-    "require": {
-        "gabrielrcouto/php-terminal-gameboy-emulator": "dev-master"
-    }
-}
