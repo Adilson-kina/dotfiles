@@ -54,13 +54,36 @@ return {
   {
     'https://github.com/elkowar/yuck.vim.git'
   },
-  -- {
-  -- 	"nvim-treesitter/nvim-treesitter",
-  -- 	opts = {
-  -- 		ensure_installed = {
-  -- 			"vim", "lua", "vimdoc",
-  --      "html", "css"
-  -- 		},
-  -- 	},
-  -- },
+  {
+  	"nvim-treesitter/nvim-treesitter",
+  	opts = {
+  		ensure_installed = {
+  			"vim", "lua", "vimdoc",
+       "html", "css"
+  		},
+  	},
+  },
+  {
+    "Jacob411/Ollama-Copilot",
+    dependencies = { "nvim-lua/plenary.nvim" },
+    event = "VeryLazy",
+    opts = {
+      model_name = "codellama:7b-code",
+      stream_suggestion = true,
+      python_command = "python3",
+      filetypes = { "lua", "python", "javascript", "html", "css" }, -- adjust as needed
+      ollama_model_opts = {
+        num_predict = 64,
+        temperature = 0.2,
+      },
+      keymaps = {
+        suggestion = "<leader>os",
+        insert_accept = "<Tab>",
+        reject = "<leader>or",
+      },
+    },
+    config = function(_, opts)
+      require("OllamaCopilot").setup(opts)
+    end,
+  },
 }
