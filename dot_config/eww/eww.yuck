@@ -1,20 +1,17 @@
 ; ---------------------------------------------------
 ; Bar related Configs
 ; ---------------------------------------------------
-;(defpoll active_window :interval "0.01s"
-;  "cat /tmp/eww-active-workspace | tr -d '\\n'")
+(deflisten active_window
+  :initial "1"
+  "scripts/active_window")
 
-(defpoll active_window :interval "0.01s"
-  "hyprctl activeworkspace -j | jq -r '.name'")
+(deflisten live-workspaces 
+  :initial "[1]"
+  "scripts/live-workspaces")
 
-(defpoll live-workspaces :interval "0.01s"
-"hyprctl workspaces -j | jq '[ .[] | .id | select(. >= 1) ] | sort'"
-)
-
-
-;(deflisten active_window :initial "1" 
-;  "/home/adilson/.c/eww/scripts/listener")
-
+(deflisten music 
+  :initial ""
+  "scripts/playing_now")
 (defwidget bar []
   (centerbox :orientation "h"
     (workspaces)
@@ -56,24 +53,25 @@
        :halign "start"
        :spacing 10
        ; DEBUG Thingy
-       ;(label :text "|DEBUG: ->${active_window}<-|" :style "color: yellow;")
+       ;(label :text "|DEBUG: ->${live-workspaces}<-|" :style "color: yellow;")
     (box :class "container" ;; Existing container box
          :orientation "h"
          :halign "start"
          :spacing 5
       (for workspace in live-workspaces
       (button :onclick "hyprctl dispatch workspace ${workspace}"
-              :onhover "echo 'hi' >> ~/home/test.txt"
               :class {
-                  active_window == workspace ? "active" : ""
+                workspace >= 10 && active_window == workspace ? "loong active" : ; loong is proposital, it's not only long it's loong
+                workspace >= 10 ? "loong" :
+                active_window == workspace ? "active" : ""
               }
               workspace))
     )
 
     ;Without this it breaks for some reason
-    (label
-      :text ""
-      :class {active_window != "" || live-workspaces != "" ? "hidden" : "hidden"})
+;    (label
+;      :text ""
+;      :class {active_window != "" || live-workspaces != "" ? "hidden" : "hidden"})
 
   )
 )
@@ -83,6 +81,7 @@
        :orientation "h"
        :space-evenly false
        :halign "center"
+       :width 1
     {music != "" ? " ${music}" : ""}))
 
 
@@ -99,8 +98,9 @@
 
 
 
-(deflisten music :initial ""
-  "playerctl --follow metadata --format '{{ artist }} - {{ title }}' || true")
+;(deflisten music :initial ""
+;  "playerctl --follow metadata --format '{{ artist }} - {{ title }}' || true")
+
 
 (defpoll volume :interval "1s" :initial "0" "wpctl get-volume @DEFAULT_AUDIO_SINK@ | sed 's/Volume: // ; s/\[MUTED\]//' | awk '{print int($1 * 100)}'")
 
@@ -109,7 +109,6 @@
 
 (defwindow bar
   :monitor 0
-  :windowtype "dock"
   :geometry (geometry :x "0%"
                       :y "1%"
                       :width "99%"
