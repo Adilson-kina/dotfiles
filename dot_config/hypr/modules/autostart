@@ -3,13 +3,17 @@
 #################
 
 exec = /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
-exec = hyprpaper
-exec-once = /usr/bin/pipewire &
-exec-once = /usr/bin/pipewire-pulse &
-exec-once = /usr/bin/wireplumber &
-exec-once = waybar &
+exec-once = hyprpaper
 exec = dunst &
-exec = flatpak run com.rtosta.zapzap &
 exec = kill $(pgrep eww)
-exec = eww open bar &
+exec = eww daemon 
+exec = eww -c ~/.config/eww/Bar/ open bar
+exec-once=dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP
 
+# Start things below with systemd instead of here #
+# exec-once = sleep 0.2s && /usr/bin/pipewire &
+# exec-once = sleep 0.2s && /usr/bin/pipewire-pulse &
+# exec-once = sleep 0.2s && /usr/bin/wireplumber &
+
+# Now using eww instead of waybar #
+# exec-once = waybar &

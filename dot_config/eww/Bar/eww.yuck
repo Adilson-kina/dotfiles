@@ -1,0 +1,120 @@
+; ---------------------------------------------------
+; Bar related Configs
+; ---------------------------------------------------
+(deflisten active_window
+  :initial "1"
+  "scripts/active_window")
+
+(deflisten live-workspaces 
+  :initial "[1]"
+  "scripts/live-workspaces")
+
+(deflisten music 
+  :initial ""
+  "scripts/playing_now")
+(defwidget bar []
+  (centerbox :orientation "h"
+    (workspaces)
+    (music)
+    (sidestuff)))
+
+(defwidget sidestuff []
+  (box :class "sidestuff" :orientation "h" :space-evenly false :halign "end"
+    (metric :label ""
+            :value volume
+            :onchange "wpctl set-volume @DEFAULT_AUDIO_SINK@ {}%"
+            :class "metric")
+    (label :text "${volume}%" :class "stats")
+    (metric :label ""
+            :value {EWW_RAM.used_mem_perc}
+            :onchange ""
+            :class "metric")
+    (label :text "${round(EWW_RAM.used_mem / 1000000000, 0)}Gb" :class "stats")    (metric :label ""
+            :value {EWW_DISK["/home"].used_perc}
+            :onchange ""
+            :class "metric")
+    (label :text "${round(EWW_DISK['/home'].used / 1000000000, 0)}Gb" :class "stats")
+    (metric :label "" 
+            :value { round(EWW_CPU.avg, 0) }
+            :onchange ""
+            :class "metric")
+    (label :text "${round(EWW_CPU.avg, 0)}%" :class "stats")
+    
+    time
+    (button :onclick "poweroff"
+            :class "power-button"
+            :onhover "echo 'test' >> ~/test.txt"
+            "⏻")))
+
+(defwidget workspaces []
+  (box :class "workspaces"
+       :orientation "h"
+       :space-evenly true
+       :halign "start"
+       :spacing 10
+       ; DEBUG Thingy
+       ;(label :text "|DEBUG: ->${live-workspaces}<-|" :style "color: yellow;")
+    (box :class "container" ;; Existing container box
+         :orientation "h"
+         :halign "start"
+         :spacing 5
+      (for workspace in live-workspaces
+      (button :onclick "hyprctl dispatch workspace ${workspace}"
+              :class {
+                workspace >= 10 && active_window == workspace ? "loong active" : ; loong is proposital, it's not only long it's loong
+                workspace >= 10 ? "loong" :
+                active_window == workspace ? "active" : ""
+              }
+              workspace))
+    )
+
+    ;Without this it breaks for some reason
+;    (label
+;      :text ""
+;      :class {active_window != "" || live-workspaces != "" ? "hidden" : "hidden"})
+
+  )
+)
+
+(defwidget music []
+  (box :class "music"
+       :orientation "h"
+       :space-evenly false
+       :halign "center"
+       :width 1
+    {music != "" ? " ${music}" : ""}))
+
+
+(defwidget metric [label value onchange]
+  (box :orientation "h"
+       :class "metric"
+       :space-evenly false
+    (box :class "label" label)
+    (scale :min 0
+           :max 101
+           :active {onchange != ""}
+           :value value
+           :onchange onchange)))
+
+
+
+;(deflisten music :initial ""
+;  "playerctl --follow metadata --format '{{ artist }} - {{ title }}' || true")
+
+
+(defpoll volume :interval "1s" :initial "0" "wpctl get-volume @DEFAULT_AUDIO_SINK@ | sed 's/Volume: // ; s/\[MUTED\]//' | awk '{print int($1 * 100)}'")
+
+(defpoll time :interval "10s"
+  "date '+%H:%M %b %d, %Y'")
+
+(defwindow bar
+  :monitor 0
+  :geometry (geometry :x "0%"
+                      :y "1%"
+                      :width "99%"
+                      :height "10px"
+                      :anchor "top center")
+  :reserve (struts :side "top" :distance "4%")
+  :exclusive true
+  (bar))
+

@@ -1,0 +1,3 @@
+#!/bin/bash 
+pkill eww
+eww -c ~/.config/eww/Bar/ open bar

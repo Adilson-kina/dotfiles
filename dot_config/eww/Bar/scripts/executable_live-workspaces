@@ -1,0 +1,10 @@
+#!/bin/bash
+
+holder=0
+while true; do
+  query=$(hyprctl workspaces -j | jq '[ .[] | .id | select(. >= 1) ] | sort')
+  if [[ "$holder" != "$query" ]]; then
+    holder="$query"
+    echo $holder
+  fi
+done

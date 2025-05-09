@@ -1,0 +1,210 @@
+#!/bin/bash
+
+# launcher.sh - Script to manage applications for Eww App Launcher
+
+EWW_BIN="eww" # Path to your eww binary if not in PATH
+
+# --- Functions ---
+
+# Function to safely escape strings for JSON
+json_escape() {
+  # Escape backslashes, double quotes, and control characters
+  # More robust escaping might be needed for all edge cases
+  echo "$1" | sed 's/\\/\\\\/g; s/"/\\"/g; s/\n/\\n/g; s/\r/\\r/g; s/\t/\\t/g'
+}
+
+# Function to get application details from .desktop files
+get_app_details() {
+  local desktop_file="$1"
+  local name=""
+  local exec_cmd=""
+  local icon=""
+  local terminal="false"
+
+  # Extract Name
+  name=$(grep -E "^Name(\[.*\])?=" "$desktop_file" | sed -E 's/Name(\[.*\])?=//' | head -n 1)
+  if [ -z "$name" ]; then
+    name=$(basename "$desktop_file" .desktop) # Fallback to filename
+  fi
+
+  # Extract Exec command
+  # Remove desktop action specific execs like %f, %F, %u, %U, %d, %D, %n, %N, %k, %v, %m
+  # This is a simplification; a more robust parser would handle these fields better.
+  exec_cmd=$(grep -E "^Exec=" "$desktop_file" | sed -e 's/^Exec=//' -e 's/ %[fFuUdDnNkvm]//g' | head -n 1)
+
+  # Extract Icon
+  icon=$(grep -E "^Icon=" "$desktop_file" | sed 's/^Icon=//' | head -n 1)
+  # If icon is not a full path, try to find it in common theme directories (simplified)
+  if [[ -n "$icon" && ! "$icon" == /* ]]; then
+    # Look in a few common places - this is not exhaustive
+    if [ -f "/usr/share/icons/hicolor/48x48/apps/${icon}.png" ]; then
+      icon="/usr/share/icons/hicolor/48x48/apps/${icon}.png"
+    elif [ -f "/usr/share/pixmaps/${icon}.png" ]; then
+      icon="/usr/share/pixmaps/${icon}.png"
+    else
+      # Fallback icon name (eww might find it in the current theme)
+      icon="${icon}"
+    fi
+  elif [ -z "$icon" ]; then
+      icon="application-x-executable" # Default fallback icon
+  fi
+
+
+  # Check if it needs to run in a terminal
+  terminal_field=$(grep -E "^Terminal=" "$desktop_file" | sed 's/^Terminal=//' | head -n 1)
+  if [[ "$terminal_field" == "true" ]]; then
+    # You might need to configure your terminal emulator here
+    # For example: exec_cmd="kitty -e ${exec_cmd}" or "gnome-terminal -- ${exec_cmd}"
+    # This example assumes a terminal like 'xterm' or that your default terminal handles '-e'
+    # A more robust solution would be to have a configurable terminal variable.
+    local default_terminal="xterm" # Or your preferred terminal
+    # Check if common terminals are available
+    if command -v gnome-terminal &> /dev/null; then default_terminal="gnome-terminal --";
+    elif command -v konsole &> /dev/null; then default_terminal="konsole -e";
+    elif command -v kitty &> /dev/null; then default_terminal="kitty -e";
+    elif command -v alacritty &> /dev/null; then default_terminal="alacritty -e";
+    elif command -v xfce4-terminal &> /dev/null; then default_terminal="xfce4-terminal -e";
+    fi
+    exec_cmd="${default_terminal} ${exec_cmd}"
+  fi
+
+
+  # Ensure exec_cmd is not empty
+  if [ -z "$exec_cmd" ]; then
+    return 1 # Skip if no exec command
+  fi
+
+  # Escape for JSON and Eww widget
+  local escaped_name=$(json_escape "$name")
+  local escaped_exec_cmd=$(json_escape "$exec_cmd")
+  local escaped_icon=$(json_escape "$icon")
+
+  echo "(app_item :name \"$escaped_name\" :command \"$escaped_exec_cmd\" :icon \"$escaped_icon\")"
+}
+
+# Function to list all applications and format for Eww
+list_applications() {
+  local app_widgets="["
+  local first_app=true
+
+  # Common directories for .desktop files
+  local app_dirs=(
+    "/usr/share/applications"
+    "/usr/local/share/applications"
+    "$HOME/.local/share/applications"
+  )
+
+  # For Flatpak apps
+  if [ -d "/var/lib/flatpak/exports/share/applications" ]; then
+    app_dirs+=("/var/lib/flatpak/exports/share/applications")
+  fi
+  if [ -d "$HOME/.local/share/flatpak/exports/share/applications" ]; then
+    app_dirs+=("$HOME/.local/share/flatpak/exports/share/applications")
+  fi
+
+  # Find and process .desktop files
+  # Using find + while read is safer for filenames with spaces
+  find "${app_dirs[@]}" -maxdepth 1 -name "*.desktop" -print0 2>/dev/null | while IFS= read -r -d $'\0' desktop_file; do
+    # Skip entries that have NoDisplay=true
+    if grep -q "^NoDisplay=true" "$desktop_file"; then
+      continue
+    fi
+    # Skip entries that are not of Type=Application (if Type is specified)
+    if grep -q "^Type=" "$desktop_file" && ! grep -q "^Type=Application" "$desktop_file"; then
+        continue
+    fi
+
+    widget_str=$(get_app_details "$desktop_file")
+    if [ -n "$widget_str" ]; then
+      if $first_app; then
+        app_widgets+="$widget_str"
+        first_app=false
+      else
+        app_widgets+=" $widget_str" # Add space separator for yuck list
+      fi
+    fi
+  done
+
+  app_widgets+="]"
+  # Update Eww variable
+  "$EWW_BIN" update "app_list=$app_widgets"
+}
+
+# Function to filter applications based on search query
+filter_applications() {
+  local query=$(echo "$1" | tr '[:upper:]' '[:lower:]') # Convert query to lowercase for case-insensitive search
+  local app_widgets="["
+  local first_app=true
+
+  local app_dirs=(
+    "/usr/share/applications"
+    "/usr/local/share/applications"
+    "$HOME/.local/share/applications"
+  )
+  if [ -d "/var/lib/flatpak/exports/share/applications" ]; then
+    app_dirs+=("/var/lib/flatpak/exports/share/applications")
+  fi
+  if [ -d "$HOME/.local/share/flatpak/exports/share/applications" ]; then
+    app_dirs+=("$HOME/.local/share/flatpak/exports/share/applications")
+  fi
+
+  find "${app_dirs[@]}" -maxdepth 1 -name "*.desktop" -print0 2>/dev/null | while IFS= read -r -d $'\0' desktop_file; do
+    if grep -q "^NoDisplay=true" "$desktop_file"; then
+      continue
+    fi
+    if grep -q "^Type=" "$desktop_file" && ! grep -q "^Type=Application" "$desktop_file"; then
+        continue
+    fi
+
+    name_line=$(grep -E "^Name(\[.*\])?=" "$desktop_file" | sed -E 's/Name(\[.*\])?=//' | head -n 1)
+    # Fallback to filename if Name is not found for filtering purpose
+    if [ -z "$name_line" ]; then
+        name_line=$(basename "$desktop_file" .desktop)
+    fi
+    name_lower=$(echo "$name_line" | tr '[:upper:]' '[:lower:]')
+
+    if [[ -z "$query" || "$name_lower" == *"$query"* ]]; then
+      widget_str=$(get_app_details "$desktop_file")
+      if [ -n "$widget_str" ]; then
+        if $first_app; then
+          app_widgets+="$widget_str"
+          first_app=false
+        else
+          app_widgets+=" $widget_str"
+        fi
+      fi
+    fi
+  done
+
+  app_widgets+="]"
+  "$EWW_BIN" update "app_list=$app_widgets"
+}
+
+
+# --- Main Logic ---
+case "$1" in
+  list)
+    list_applications
+    ;;
+  filter)
+    filter_applications "$2"
+    ;;
+  launch)
+    # The command is now directly executed by the eww button's :onclick
+    # This case could be used if you need more complex launch logic from the script
+    # For example: $2 is the command to execute
+    # eval "$2" & disown
+    echo "Launch command is handled by eww widget directly."
+    ;;
+  *)
+    echo "Usage: $0 {list|filter <query>}"
+    # For initial population when eww starts, you might call list_applications here
+    # or have eww call it.
+    # Example: if eww is just opened, populate the list.
+    # if ! eww get app_list > /dev/null 2>&1; then
+    #    list_applications
+    # fi
+    ;;
+esac
+
+exit 0

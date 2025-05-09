@@ -1,0 +1,177 @@
+;############
+;### MAIN ###
+;############
+
+(defwindow bar
+  :monitor 0
+  :geometry 
+  (
+    geometry
+    :x "0"
+    :y "0"
+    :width "100%"
+    :height "30px"
+    :anchor "top center"
+  )
+  :stacking "bg"
+  :exclusive true
+  (box
+    (left-bar)
+
+    (middle-bar
+      :hour hour
+      :date date
+      :button-active button-active
+    )
+
+    (right-bar
+      :volume volume
+      :mic-sensi mic-sensi
+    )
+    (ws)
+  )
+)
+
+;#################
+;### VARIABLES ###
+;#################
+
+(defvar audio true)
+(defvar time-visible true)
+(defvar button-active false)
+(defvar active-workspace 2)
+
+(defvar WS '{"ws1": [{"name": "1", "icon": "", "status": "occupied"},
+                     {"name": "2", "icon": "", "status": "empty"},
+                     {"name": "3", "icon": "", "status": "focused"}],
+             "ws2": [{"name": "4", "icon": "", "status": "empty"},
+                     {"name": "5", "icon": "", "status": "occupied"},
+                     {"name": "6", "icon": "", "status": "urgent"}],
+             "focused": "3"}')
+
+(defpoll hour
+  :interval "1s"
+  :initial "initial-value"
+  :run-while time-visible 
+  `date +%H:%M:%S`
+ ) 
+(defpoll date
+  :interval "1s"
+  :initial "initial-value"
+  :run-while time-visible 
+  `date +%d/%m/%Y`
+ ) 
+
+(defpoll volume
+  :interval "10000"
+  :initial "100"
+  :run-while audio 
+  `pulsemixer --get-volume | awk '{print $1}'`
+)
+
+(defpoll mic-sensi
+  :interval "10000"
+  :initial "100"
+  :run-while audio 
+  `pulsemixer --id $(pulsemixer --list-sources | grep "Family 17h/19h/1ah HD Audio Controller Analog Stereo" | grep "Default" | awk '{print $3}' | sed 's/,/ /g' | xargs) --get-volume | awk '{print $1}'`
+)
+
+;###############
+;### WIDGETS ###
+;###############
+
+(defwidget right-bar [volume mic-sensi]
+  (box
+    :orientation "horizontal"
+    :halign "end"
+    (button
+      :onclick "pavucontrol &"
+      "${volume}% "
+    )
+    (button
+      :onclick "pavucontrol &"
+      "${mic-sensi}% "
+    )
+    (button
+      "${round(EWW_CPU.avg, 0)}% "
+    )
+    (button
+      "${round(EWW_RAM.used_mem_perc, 0)}% "
+    )
+    (button
+      :onclick "poweroff"
+      ""
+    )
+  )
+)
+
+(defwidget middle-bar [hour date button-active]
+  (button
+    :onclick {button-active ? "eww update button-active=false" : "eww update button-active=true"}
+    {button-active ? date : hour}
+  )
+)
+
+(defwidget left-bar []
+  (box 
+    :class "left-workspace"
+    (box
+      :class "left-workspace-container"
+      (box 
+        (button 
+          :onclick "hyprctl dispatch workspace 1 && eww update active-workspace=1"
+          (box 
+            :class {active-workspace == 1 ? "active-workspace" : "workspace-button"}
+            1
+          )
+        )
+      )
+      (button :onclick "hyprctl dispatch workspace 2" 2)
+      (button :onclick "hyprctl dispatch workspace 3" 3)
+      (button :onclick "hyprctl dispatch workspace 4" 4)
+      (button :onclick "hyprctl dispatch workspace 5" 5)
+      (button :onclick "hyprctl dispatch workspace 6" 6)
+      (button :onclick "hyprctl dispatch workspace 7" 7)
+      (button :onclick "hyprctl dispatch workspace 8" 8)
+      (button :onclick "hyprctl dispatch workspace 9" 9)
+      (button :onclick "hyprctl dispatch workspace 10" 10)
+    )
+  )
+)
+
+(defwidget ws []
+  (box :class "ws"
+       :orientation "horizontal"
+       :space-evenly false
+    (small-wss :wss "${WS.ws1}")
+    (small-wss :wss "${WS.ws2}")
+    (big-ws :focused-ws "${WS.focused}")))
+
+
+(defwidget small-wss [wss]
+  (box 
+    :class "small-wss"
+    :hexpand false
+    :vexpand false
+    (for ws in wss
+      (small-ws :ws ws))))
+    
+(defwidget small-ws [ws]
+  (eventbox 
+    :cursor "hand"
+    (button
+      :onclick "hyprctl dispatch workspace ${ws.name}"
+      (label 
+        :class "small-ws status-${ws.status}"
+        :text "${ws.icon}"))))
+
+(defwidget big-ws [focused-ws]
+  (box
+    :class "big-ws"
+    :hexpand false
+    :vexpand false
+    :height "50"
+    :width "50"
+
+    (label 
+      :text "${focused-ws}")))

@@ -1,0 +1,10 @@
+#!/bin/bash
+
+holder=0
+while true; do
+  query=$(hyprctl activeworkspace -j | jq -r '.name')
+  if [[ "$holder" != "$query" ]]; then
+    holder="$query"
+    echo $holder
+  fi
+done

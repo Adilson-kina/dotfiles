@@ -1,0 +1,99 @@
+* {
+  all: unset; // Unsets everything so you can style everything from scratch
+  font-family: "0xProto Nerd Font";
+}
+
+// Global Styles
+.bar {
+  background-color: #24273a;
+  color: #b8c0e0;
+  padding: 10px;
+  border-radius: 10px;
+  font-family: "0xProto Nerd Font", monospace;
+}
+
+// Styles on classes (see eww.yuck for more information)
+
+.sidestuff{
+  margin: 0px;
+  padding: 0px;
+}
+
+.sidestuff slider {
+  all: unset;
+  color: #b8c0e0;
+  padding: 4px;
+}
+
+.metric scale trough highlight {
+  all: unset;
+  background-color: #ed8796;
+  color: #000000;
+  border-radius: 10px;
+}
+
+.metric scale trough {
+  all: unset;
+  background-color: #494d64;
+  border-radius: 50px;
+  min-height: 3px;
+  min-width: 50px;
+  margin-left: 10px;
+  margin-right: 0px;
+}
+
+.label-ram {
+  font-size: large;
+}
+
+.workspaces button{
+  background-color: #f5bde6;
+  color: #181926;
+  padding: 4px 9px;
+  border-radius: 50%;
+}
+
+.workspaces button:hover {
+  background-color: #c6a0f6 ;
+}
+
+.container{
+  background-color: #363a4f;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.workspaces button.active{
+  background-color: #ed8796;
+}
+
+.metric{
+  margin-right: 0px;
+}
+
+.stats{
+  margin-right: 20px;
+  margin-left: 5px;
+}
+
+.power-button{
+  margin-left: 20px;
+  background-color: #ed8796;
+  border-radius: 50%;
+  padding: 4px 15px 5px 12px;
+  color: #181926;
+}
+
+.music{
+  margin-right: 50px;
+}
+
+.workspaces .loong{
+  padding: 2px 4px;
+}
+/* For styling special workspace if wanted
+
+.workspaces .special{
+  padding: 4px 0px;
+}
+*/
