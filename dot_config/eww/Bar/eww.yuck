@@ -101,8 +101,11 @@
 ;(deflisten music :initial ""
 ;  "playerctl --follow metadata --format '{{ artist }} - {{ title }}' || true")
 
+(deflisten volume 
+  :initial "0"
+  "scripts/volume")
 
-(defpoll volume :interval "1s" :initial "0" "wpctl get-volume @DEFAULT_AUDIO_SINK@ | sed 's/Volume: // ; s/\[MUTED\]//' | awk '{print int($1 * 100)}'")
+;(defpoll volume :interval "1s" :initial "0" "wpctl get-volume @DEFAULT_AUDIO_SINK@ | sed 's/Volume: // ; s/\[MUTED\]//' | awk '{print int($1 * 100)}'")
 
 (defpoll time :interval "10s"
   "date '+%H:%M %b %d, %Y'")
